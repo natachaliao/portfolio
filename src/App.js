@@ -19,7 +19,7 @@ function App() {
           </Route>
         )}
         
-        <Route path="/home">
+        <Route>
           <Header name="Natacha Liao" />
           <Homepage />
           <Contact mail="natacha-liao@live.fr"/>
