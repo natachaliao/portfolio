@@ -1,0 +1,50 @@
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    justify-content: stretch;
+}
+
+.projprev {
+    position: relative;
+    height: 15em;
+}
+
+.projprev-hover {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    color:  var(--basic);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity .3s ease;
+}
+
+.projprev-hover:hover {
+    opacity: 1;
+}
+
+.projprev img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projprev * {
+    margin: 0;
+}
+
+.projprev-title {
+    margin-bottom: 1em;
+}
+
+.projprev-categories {
+    display: flex;
+    flex-direction: column;
+}

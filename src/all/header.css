@@ -1,0 +1,47 @@
+#header {
+    text-align: center;
+    padding: 2em;
+    /* background: var(--basic);
+    color: rgb(255, 255, 255); */
+}
+
+#h-title {
+    font-size: 64px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#h-title a {
+    text-decoration: none;
+    color: var(--basic);
+}
+
+#h-categories > * {
+    margin: 0 1em;
+    display: inline-block;
+}
+
+#h-categories > *:hover {
+    cursor: pointer;
+}
+
+#h-categories>*:after {
+    content: "";
+    display: block;
+    background: var(--basic);
+    width: 0%;
+    height: .12em;
+    position:relative;
+    left: 50%;
+    transition: width .3s ease, left .3s ease;
+}
+
+#h-categories>*:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+#h-categories>*.selected:after {
+    width: 100%;
+    left: 0;
+}

@@ -1,0 +1,80 @@
+.lighthouse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(34, 34, 34, 0.98);
+    width: 100vw;
+    height: 100vh;
+    padding: 2em;
+    display: grid;
+    grid-template-rows: calc(100% - 10em) 5em;
+    grid-template-columns: 5em calc(100% - 16em) 5em;
+    grid-template-areas: 
+    "l-arrow current r-arrow"
+    "thumbnails thumbnails thumbnails";
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+}
+
+.l-pictures {
+    grid-area: thumbnails;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: 100%;
+    gap: .5em;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.l-pictures img {
+    height:100%;
+    width: auto;
+    cursor: pointer;
+}
+
+.l-pictures img:not(.currentThumbnail) {
+    filter: brightness(.5);
+}
+
+.currentPicture {
+    grid-area: current;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.left-arrow {
+    grid-area: l-arrow;
+}
+
+.right-arrow {
+    grid-area: r-arrow;
+    transform: rotateZ(180deg);
+}
+
+.left-arrow, .right-arrow {
+    width: 2em;
+    filter: brightness(.3);
+    cursor: pointer;
+    transition: filter .3s ease;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+    filter: brightness(1);
+}
+
+.close {
+    width: 1.2em;
+    height: auto;
+    position: absolute;
+    top: 3em;
+    right: 7em;
+    cursor: pointer;
+    filter: brightness(.3);
+    transition: filter .3s ease;
+}
+
+.close:hover {
+    filter: brightness(1);
+}

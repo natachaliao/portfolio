@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Projet 89",
+        "order": 1,
+        "year": 2021,
+        "categories": [1, 2, 3],
+        "file": "Projet89/cover.png",
+        "route": "projet89",
+        "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
+        "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator"],
+        "description": "Dans le cadre d’un projet tutoré, j’ai réalisée en équipe de 4 un site web full-stack en collaboration avec la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js., d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
+        "pictures": ["Projet89/highlight&preview.PNG", "Projet89/document.png", "Projet89/admin.png"]
+    },    
+    {
+        "name": "Wishing You Good Night",
+        "order": 2,
+        "year": 2020,
+        "categories": [3],
+        "file": "WishingYouGoodNight/cover.png",
+        "route": "wishingyougoodnight",
+        "contributors": [],
+        "tools": ["IbisPaintX"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "Magasin RPG",
+        "order": 3,
+        "year": 2019,
+        "categories": [2],
+        "file": "MagasinRPG/cover.png",
+        "route": "magasinrpg",
+        "contributors": ["Kéziah VALORIS", "Inconnu"],
+        "tools": ["PHP", "HTLM/CSS"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "Golden Tale",
+        "order": 4,
+        "year": 2019,
+        "categories": [3],
+        "file": "GoldenTale/cover.png",
+        "route": "goldentale",
+        "contributors": ["Kéziah VALORIS"],
+        "tools": ["Photoshop", "InDesign", "MagicaVoxel"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "Babelio Kids",
+        "order": 5,
+        "year": 2021,
+        "categories": [1],
+        "file": "BabelioKids/homepage.png",
+        "route": "babeliokids",
+        "contributors": [],
+        "tools": ["Figma"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "Théalia",
+        "order": 6,
+        "year": 2020,
+        "categories": [3],
+        "file": "Thealia/poster1.png",
+        "route": "thealia",
+        "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
+        "tools": ["Premiere Pro", "After Effects", "IbisPaintX", "Blender"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "The Beast in the Village",
+        "order": 7,
+        "year": 2021,
+        "categories": [4],
+        "file": "TheBeastInTheVillage/cover.png",
+        "route": "thebeastinthevillage",
+        "contributors": ["Judicaêlle SIX"],
+        "tools": ["After Effects", "Illustrator"],
+        "description": "",
+        "pictures": []
+    },    
+    {
+        "name": "Présentation Epifree",
+        "order": 7,
+        "year": 2020,
+        "categories": [4],
+        "file": "PresentationEpifree/cover.jpg",
+        "route": "presentationepifree",
+        "contributors": ["Kéziah VALORIS"],
+        "tools": ["After Effects", "Illustrator"],
+        "description": "",
+        "pictures": []
+    }
+]

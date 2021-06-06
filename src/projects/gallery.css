@@ -1,0 +1,25 @@
+:root {
+    --colGallery: 3;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(var(--colGallery), 1fr);
+    gap: 1em;
+    margin: 5em;
+    justify-items: center;
+}
+
+.gallery > img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: width .3s ease, top .3s ease;
+}
+
+.gallery>img:hover {
+    width: 105%;
+    top: -2.5%;
+}

@@ -1,0 +1,24 @@
+#p-categories {
+    display: flex;
+    justify-content:space-evenly;
+    margin: 2em 0;
+}
+
+.p-category {
+    background: var(--grey);
+    border-radius: 1.5em;
+    padding: .5em .8em;
+    text-align: center;
+    transition: background .3s ease, color .3s linear;
+}
+
+.p-category:hover {
+    background: var(--basic);
+    color: rgb(255, 255, 255); 
+    cursor: pointer;
+}
+
+.p-category.selected {
+    background: var(--basic);
+    color: rgb(255, 255, 255);
+}
