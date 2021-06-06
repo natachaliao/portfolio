@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = (props) => {
@@ -20,7 +21,7 @@ const Header = (props) => {
 
   return (
     <div id="header">
-      <h1 id="h-title" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "home")}><a href="/home">{name}</a></h1>
+      <h1 id="h-title" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "home")}><Link to="/home">{name}</Link></h1>
       <div id="h-categories">
         <span id="h-contact" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "contact")}>Contact</span>
         <span id="h-apropos" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "apropos")}>A propos</span>

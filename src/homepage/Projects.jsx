@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './projects.css';
 
 const Projects = (props) => {
@@ -31,10 +32,10 @@ const Project = (props) => {
   })
 
   return (
-    <a
+    <Link
       className="projprev"
       id={`projprev-${name}`}
-      href={`/${route}`}
+      to={`/${route}`}
     >
       <img alt="" src={path}></img>
 
@@ -44,7 +45,7 @@ const Project = (props) => {
           {categories.map((category, index) => <span key={`projprev-category-${index}`}>{category}</span>)}
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
 
