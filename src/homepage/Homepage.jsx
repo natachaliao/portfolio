@@ -7,7 +7,8 @@ import { useState } from 'react';
 
 const Homepage = (props) => {
   
-  // Field "categories" in array "projects" is id, replace it with corresponding name
+  const { setSelectedHeaderCateg } = props;
+  // Fied "categories" in array "projects" is id, replace it with corresponding name
   const replaceIdByCategory = (array) => {
     const res = array.map(id => {
       let i = 0;
@@ -48,7 +49,7 @@ const Homepage = (props) => {
         selectedCateg={selectedCateg}
         setSelectedCateg={category => setSelectedCateg(selectedCateg => category)} 
       />
-      <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} />
+      <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
     </div>
   )
 }

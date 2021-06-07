@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import './projects.css';
 
 const Projects = (props) => {
-  const { projects } = props;
+  const { projects, setSelectedHeaderCateg } = props;
 
   return (
     <div id="projects">
       {projects.map((project) =>
-        <Project key={`${project.order}-${project.name}`} project={project} />
+        <Project key={`${project.order}-${project.name}`} project={project} setSelectedHeaderCateg={setSelectedHeaderCateg} />
       )}
     </div>
   )
@@ -16,6 +16,7 @@ const Projects = (props) => {
 
 const Project = (props) => {
   const { name, file, categories, route } = props.project;
+  const { setSelectedHeaderCateg } = props;
   const path = require("../assets/" + file).default;
 
   const animateProject = () => {
@@ -36,6 +37,7 @@ const Project = (props) => {
       className="projprev"
       id={`projprev-${name}`}
       to={`/${route}`}
+      onClick={() => setSelectedHeaderCateg()}
     >
       <img alt="" src={path}></img>
 

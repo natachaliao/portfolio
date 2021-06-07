@@ -9,3 +9,13 @@
 #contact-title {
     margin-top: 0;
 }
+
+#contact-area a {
+    color: white;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+#contact-area a:hover {
+    color: var(--accent);
+}

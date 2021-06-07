@@ -2,25 +2,25 @@
     {
         "name": "Ce Portfolio",
         "order": 8,
-        "year": 2021,
+        "date": 2021,
         "categories": [1, 2],
         "file": "Portfolio/cover.png",
         "route": "ceportfolio",
         "contributors": [],
         "tools": ["React", "CSS"],
-        "description": "J'ai codé ce site, abritant mon portfolio, avec React.",
+        "description": "J'ai entièrement codé ce site, abritant mon portfolio, avec React.",
         "pictures": []
     },
     {
         "name": "Covid Vaccine",
         "order": 9,
-        "year": 2021,
+        "date": 2021,
         "categories": [1, 2],
         "file": "CovidVaccine/graph.png",
         "route": "covidvaccine",
         "contributors": ["Léa LAFFITTE", "Kéziah VALORIS"],
-        "tools": ["Three.js", "CSS"],
-        "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder le site et notamment de réaliser le globe terrestre avec three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
+        "tools": ["Three.js", "HTML/CSS/JS"],
+        "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder le site et notamment de réaliser le globe terrestre avec la bibliothèque three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
         "pictures": [
             {
                 "file":"CovidVaccine/homepage.png",
@@ -40,7 +40,7 @@
     {
         "name": "The Beast in the Village",
         "order": 7,
-        "year": 2021,
+        "date": 2021,
         "categories": [4],
         "file": "TheBeastInTheVillage/cover.png",
         "route": "thebeastinthevillage",
@@ -57,13 +57,13 @@
     {
         "name": "Babelio Kids",
         "order": 5,
-        "year": 2021,
+        "date": 2021,
         "categories": [1],
         "file": "BabelioKids/homepage.png",
         "route": "babeliokids",
         "contributors": [],
         "tools": ["Figma"],
-        "description": "Dans le cadre d’un exercice, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. Mon objectif était de rendre le site plus compréhensible et attrayant pour ce public. Pour cet exercice, j'ai réalisé un benchmark, un moodboard, des personnas, le zoning, le wireframe et des maquettes réalisées sur Figma.",
+        "description": "Dans le cadre du cours de web design, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. Mon objectif était de rendre le site plus compréhensible et attrayant pour ce public. Pour cet exercice, j'ai réalisé un benchmark, un moodboard, des personnas, le zoning, le wireframe et des maquettes réalisées sur Figma.",
         "pictures": [
             {
                 "file": "BabelioKids/homepage.png",
@@ -77,12 +77,12 @@
     {
         "name": "Projet 89",
         "order": 1,
-        "year": 2021,
+        "date": 2021,
         "categories": [1, 2, 3],
         "file": "Projet89/cover.png",
         "route": "projet89",
         "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
-        "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator"],
+        "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator", "iPad & Apple Pencil"],
         "description": "Dans le cadre d’un projet tutoré, j’ai réalisé en équipe de 4 un site web full-stack en collaboration avec une compagnie de théâtre nommée la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js, d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes en utilisant Illustrator.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
         "pictures": [
             {
@@ -115,13 +115,13 @@
     {
         "name": "Théalia",
         "order": 6,
-        "year": 2020,
+        "date": 2020,
         "categories": [3],
         "file": "Thealia/poster1.png",
         "route": "thealia",
         "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
-        "tools": ["Premiere Pro", "After Effects", "IbisPaintX", "Blender"],
-        "description": "Théalia est un court-métrage réalisé en groupe de 5. Ingénieure son et graphiste sur ce projet, j’ai notamment réalisé deux affiches animées pour le projet.<br/><br/>\"Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de notre protagoniste Koios, cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même.\"",
+        "tools": ["Premiere Pro", "After Effects", "iPad & Apple Pencil", "Blender"],
+        "description": "Théalia est un court-métrage réalisé en groupe de 5. Ingénieure son et graphiste sur ce projet, j’ai notamment réalisé deux affiches animées pour le court-métrage.<br/><br/>\"Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de notre protagoniste Koios, cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même.\"",
         "pictures": [
             {
                 "file":"Thealia/poster1.gif",
@@ -136,12 +136,12 @@
     {
         "name": "Wishing You Good Night",
         "order": 2,
-        "year": 2020,
+        "date": 2020,
         "categories": [3],
         "file": "WishingYouGoodNight/cover.png",
         "route": "wishingyougoodnight",
         "contributors": [],
-        "tools": ["IbisPaintX"],
+        "tools": ["iPad & Apple Pencil"],
         "description": "Une carte illustrée représentant une jeune fille dans une mise en scène théâtrale et onirique.",
         "pictures": [
             {
@@ -153,7 +153,7 @@
     {
         "name": "Golden Tale",
         "order": 4,
-        "year": 2019,
+        "date": 2019,
         "categories": [3],
         "file": "GoldenTale/cover.png",
         "route": "goldentale",
@@ -173,43 +173,46 @@
     {
         "name": "Epifree",
         "order": 7,
-        "year": 2020,
+        "date": "2020-PRÉSENT",
         "categories": [4],
-        "file": "PresentationEpifree/cover.jpg",
+        "file": "Epifree/cover.jpg",
         "route": "epifree",
         "contributors": ["Kéziah VALORIS"],
-        "tools": ["After Effects", "Illustrator"],
-        "description": "Epifree est une épicerie solidaire étudiante au sein de laquelle je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur distribuant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé une vidéo de présentation en motion design avec Kéziah Valoris ainsi que des visuels pour les réseaux sociaux et des affiches.<br/><br/>Voir la page facebook <a target='_blank' href='https://www.facebook.com/Epifree-UGE-109464603780131'>ici</a>.",
+        "tools": ["After Effects", "Illustrator", "iPad & Apple Pencil"],
+        "description": "Epifree est une épicerie solidaire étudiante au sein de laquelle je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur distribuant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé la deuxième moitié d'une vidéo de présentation en motion design à partir de 00:24 ainsi que des visuels pour les réseaux sociaux et des affiches.<br/><br/>Voir la page facebook <a target='_blank' href='https://www.facebook.com/Epifree-UGE-109464603780131'>ici</a>.",
         "pictures": [
             {
                 "file": "https://www.youtube.com/embed/EtG9N1RlU7Q",
                 "media":"video"
             }, {
-                "file": "PresentationEpifree/miel.png",
+                "file": "Epifree/miel.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-01.png",
+                "file": "Epifree/recrutement.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-02.png",
+                "file": "Epifree/chr10-01.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-03.png",
+                "file": "Epifree/chr10-02.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-04.png",
+                "file": "Epifree/chr10-03.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-05.png",
+                "file": "Epifree/chr10-04.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-06.png",
+                "file": "Epifree/chr10-05.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-07.png",
+                "file": "Epifree/chr10-06.png",
                 "media":"picture"
             }, {
-                "file": "PresentationEpifree/chr10-08.png",
+                "file": "Epifree/chr10-07.png",
+                "media":"picture"
+            }, {
+                "file": "Epifree/chr10-08.png",
                 "media":"picture"
             }
         ]
@@ -217,13 +220,18 @@
     {
         "name": "Magasin RPG",
         "order": 3,
-        "year": 2019,
+        "date": 2019,
         "categories": [2],
         "file": "MagasinRPG/cover.png",
         "route": "magasinrpg",
-        "contributors": ["Kéziah VALORIS", "Inconnu"],
-        "tools": ["PHP", "HTLM/CSS"],
+        "contributors": ["Kéziah VALORIS", "Amélie CROUIGNEAU", "Achraf LEMGHARI"],
+        "tools": ["PHP", "HTLM/CSS/JS"],
         "description": "Magasin RPG est un site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
-        "pictures": []
+        "pictures": [
+            {
+                "file":"MagasinRPG/cover.png",
+                "media":"picture"
+            }
+        ]
     }
 ]

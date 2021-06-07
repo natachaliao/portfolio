@@ -20,8 +20,11 @@ const Lighthouse = (props) => {
   }
 
   const closeLightHouse = () => {
-    setCurrent(-1);
-    document.body.style.overflow = "initial";
+    document.querySelector(".lighthouse").style.animationPlayState = "running";
+    setTimeout(() => {
+      setCurrent(-1);
+      document.body.style.overflow = "initial";
+    }, 300);
   }
 
   return (

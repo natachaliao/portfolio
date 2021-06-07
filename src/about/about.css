@@ -24,3 +24,13 @@
     height: 1em;
     filter: brightness(0);
 }
+
+.about-mail a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.about-mail a:hover {
+    color: var(--accent);
+}

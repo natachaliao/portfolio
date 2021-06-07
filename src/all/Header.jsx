@@ -1,18 +1,17 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
 const Header = (props) => {
-  const { name } = props;
+  const { name, selectedHeaderCateg, setSelectedHeaderCateg } = props;
 
   // Handle Header categories selection
-  const [ selectedHeaderCateg, setSelectedHeaderCateg ] = useState("home");
   const selectedCategory= (selectedHeaderCateg) => {
-    if(selectedHeaderCateg === "home") return;
     const selected = document.getElementById(`h-${selectedHeaderCateg}`);
     const all = document.querySelectorAll("#h-categories>*");
     all.forEach((categ) => categ.classList.remove("selected"));
-    selected.classList.add("selected");
+    if(selectedHeaderCateg !== "none")
+      selected.classList.add("selected");
   }
 
   useEffect(() => {

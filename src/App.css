@@ -22,3 +22,26 @@ h1 {
   --grey: rgb(233, 233, 233);
   --accent: #05d584;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:var(--grey);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 182, 182); 
+  border-radius: 1em;
+  transition: background .3s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(134, 134, 134); 
+}

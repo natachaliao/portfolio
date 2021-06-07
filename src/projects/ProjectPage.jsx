@@ -2,7 +2,7 @@ import './projectpage.css';
 import { Gallery } from './Gallery';
 
 const ProjectPage = (props) => {
-  const { name, file, contributors, tools, description, pictures } = props.project;
+  const { name, file, contributors, tools, description, pictures, date } = props.project;
   const path = require("../assets/" + file).default;
   return (
     <div className="projectpage">
@@ -14,11 +14,16 @@ const ProjectPage = (props) => {
       
       <div className="projectpage-info">
         
-        <div className="info-area" id="contributors">
+        {/* <div className="info-area" id="contributors">
           <span className="info-name">CONTRIBUTEURS</span>
           <div className="info-list">
             {contributors.map((contributor, i) => <span key={`contributor-${i}`} >{contributor}</span>)}
           </div>
+        </div> */}
+
+        <div className="info-area" id="date">
+          <span className="info-name">ANNÉE</span>
+          <span>{date}</span>
         </div>
         
         <div className="info-area" id="tools">

@@ -15,16 +15,14 @@
     gap: 1em;
     justify-items: center;
     align-items: center;
+    z-index: 99;
+    animation: .3s fadeout paused;
 }
 
 .l-items {
     height: 100%;
     width: 100%;
     grid-area: thumbnails;
-    /* display: grid;
-    grid-template-columns: repeat(9, calc(100%/9 - .4em));
-    grid-template-rows: 100%;
-    gap: .5em; */
     display: flex;
     flex-direction: row;
     position: relative;
@@ -43,7 +41,6 @@
 
 .currentThumbnail {
     border: solid rgb(255, 255, 255) .1em;
-    /* filter: brightness(100); */
 }
 
 .currentPicture {
@@ -62,11 +59,6 @@
     object-fit: contain;
 }
 
-/* .currentPicture > .video {
-    width: 100%;
-    height: 100%;
-} */
-
 .left-arrow {
     grid-area: l-arrow;
 }
@@ -78,7 +70,7 @@
 
 .left-arrow, .right-arrow {
     width: 2em;
-    filter: brightness(.3);
+    filter: brightness(.5);
     cursor: pointer;
     transition: filter .3s ease;
 }
@@ -94,7 +86,7 @@
     top: 3em;
     right: 8em;
     cursor: pointer;
-    filter: brightness(.3);
+    filter: brightness(.5);
     transition: filter .3s ease;
 }
 
@@ -102,23 +94,6 @@
     filter: brightness(1);
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 1em;
-}
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background:rgb(94, 94, 94);
-}
-   
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(182, 182, 182); 
-    border-radius: 1em;
-}
-  
-/* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 255, 255); 
+@keyframes fadeout {
+    from { opacity: 1;} to { opacity: 0; }
 }
