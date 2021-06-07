@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
+import { HashRouter as Router, Switch , Route } from 'react-router-dom';
 import { useState } from 'react';
 import { Homepage } from './homepage/Homepage';
 import Header from './all/Header';
@@ -29,7 +29,7 @@ function App() {
           <Contact mail={mail}/>
         </Route>
         
-        <Route>
+        <Route exact path="/">
           <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
           <Homepage setSelectedHeaderCateg={() => setSelectedHeaderCateg(selectedHeaderCateg => "none")} />
           <Contact mail={mail}/>
