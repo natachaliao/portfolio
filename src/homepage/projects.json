@@ -1,5 +1,80 @@
 [
     {
+        "name": "Ce Portfolio",
+        "order": 8,
+        "year": 2021,
+        "categories": [1, 2],
+        "file": "Portfolio/cover.png",
+        "route": "ceportfolio",
+        "contributors": [],
+        "tools": ["React", "CSS"],
+        "description": "J'ai codé ce site, abritant mon portfolio, avec React.",
+        "pictures": []
+    },
+    {
+        "name": "Covid Vaccine",
+        "order": 9,
+        "year": 2021,
+        "categories": [1, 2],
+        "file": "CovidVaccine/graph.png",
+        "route": "covidvaccine",
+        "contributors": ["Léa LAFFITTE", "Kéziah VALORIS"],
+        "tools": ["Three.js", "CSS"],
+        "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder le site et notamment de réaliser le globe terrestre avec three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
+        "pictures": [
+            {
+                "file":"CovidVaccine/homepage.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/explanation1.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/explanation2.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/graph.png",
+                "media": "picture"
+            }
+        ]
+    },    
+    {
+        "name": "The Beast in the Village",
+        "order": 7,
+        "year": 2021,
+        "categories": [4],
+        "file": "TheBeastInTheVillage/cover.png",
+        "route": "thebeastinthevillage",
+        "contributors": ["Judicaëlle SIX"],
+        "tools": ["After Effects", "Illustrator"],
+        "description": "The Beast In The Village est une séquence titre en motion design réalisée à deux pour un projet scolaire et inspiré du jeu Animal Crossing que nous avons réimaginé à la sauce policière. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo sur Illustrator. J’ai réalisé la seconde partie de cette dernière.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
+        "pictures": [
+            {
+                "file": "https://www.youtube.com/embed/TAq-ozovev0",
+                "media": "video"
+            }
+        ]
+    },    
+    {
+        "name": "Babelio Kids",
+        "order": 5,
+        "year": 2021,
+        "categories": [1],
+        "file": "BabelioKids/homepage.png",
+        "route": "babeliokids",
+        "contributors": [],
+        "tools": ["Figma"],
+        "description": "Dans le cadre d’un exercice, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. Mon objectif était de rendre le site plus compréhensible et attrayant pour ce public. Pour cet exercice, j'ai réalisé un benchmark, un moodboard, des personnas, le zoning, le wireframe et des maquettes réalisées sur Figma.",
+        "pictures": [
+            {
+                "file": "BabelioKids/homepage.png",
+                "media": "picture"
+            }, {
+                "file": "BabelioKids/genre.png",
+                "media": "picture"
+            }
+        ]
+    },
+    {
         "name": "Projet 89",
         "order": 1,
         "year": 2021,
@@ -8,7 +83,7 @@
         "route": "projet89",
         "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
         "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator"],
-        "description": "Dans le cadre d’un projet tutoré, j’ai réalisée en équipe de 4 un site web full-stack en collaboration avec la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js., d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
+        "description": "Dans le cadre d’un projet tutoré, j’ai réalisé en équipe de 4 un site web full-stack en collaboration avec une compagnie de théâtre nommée la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js, d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes en utilisant Illustrator.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
         "pictures": [
             {
                 "file": "Projet89/highlight&preview.PNG",
@@ -19,6 +94,42 @@
             }, {
                 "file": "Projet89/admin.png", 
                 "media": "picture"
+            }, {
+                "file": "Projet89/bouleversement.png", 
+                "media": "picture"
+            }, {
+                "file": "Projet89/ruines.png", 
+                "media": "picture"
+            }, {
+                "file": "Projet89/oracle.png", 
+                "media": "picture"
+            }, {
+                "file": "Projet89/amnesie.png", 
+                "media": "picture"
+            }, {
+                "file": "Projet89/utopie.png", 
+                "media": "picture"
+            }
+        ]
+    },    
+    {
+        "name": "Théalia",
+        "order": 6,
+        "year": 2020,
+        "categories": [3],
+        "file": "Thealia/poster1.png",
+        "route": "thealia",
+        "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
+        "tools": ["Premiere Pro", "After Effects", "IbisPaintX", "Blender"],
+        "description": "Théalia est un court-métrage réalisé en groupe de 5. Ingénieure son et graphiste sur ce projet, j’ai notamment réalisé deux affiches animées pour le projet.<br/><br/>\"Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de notre protagoniste Koios, cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même.\"",
+        "pictures": [
+            {
+                "file":"Thealia/poster1.gif",
+                "media":"picture"
+            },
+            {
+                "file":"Thealia/poster2.gif",
+                "media":"picture"
             }
         ]
     },    
@@ -31,25 +142,13 @@
         "route": "wishingyougoodnight",
         "contributors": [],
         "tools": ["IbisPaintX"],
-        "description": "Une carte illustrée représentant une jeune fille dans une mise en scène à la fois théâtrale et onirique.",
+        "description": "Une carte illustrée représentant une jeune fille dans une mise en scène théâtrale et onirique.",
         "pictures": [
             {
                 "file":"WishingYouGoodNight/cover.png",
                 "media":"picture"
             }
         ]
-    },    
-    {
-        "name": "Magasin RPG",
-        "order": 3,
-        "year": 2019,
-        "categories": [2],
-        "file": "MagasinRPG/cover.png",
-        "route": "magasinrpg",
-        "contributors": ["Kéziah VALORIS", "Inconnu"],
-        "tools": ["PHP", "HTLM/CSS"],
-        "description": "RPG shop est une site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
-        "pictures": []
     },    
     {
         "name": "Golden Tale",
@@ -72,78 +171,59 @@
         ]
     },    
     {
-        "name": "Babelio Kids",
-        "order": 5,
-        "year": 2021,
-        "categories": [1],
-        "file": "BabelioKids/homepage.png",
-        "route": "babeliokids",
-        "contributors": [],
-        "tools": ["Figma"],
-        "description": "Dans le cadre d’un exercice, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. J’ai travaillé à rendre le site plus compréhensible et attrayant pour les enfants. Voici les maquettes réalisées sur Figma de la page d’accueil et de la page de résultats d’un des genres.",
-        "pictures": [
-            {
-                "file": "BabelioKids/homepage.png",
-                "media": "picture"
-            }, {
-                "file": "BabelioKids/genre.png",
-                "media": "picture"
-            }
-        ]
-    },    
-    {
-        "name": "Théalia",
-        "order": 6,
-        "year": 2020,
-        "categories": [3],
-        "file": "Thealia/poster1.png",
-        "route": "thealia",
-        "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
-        "tools": ["Premiere Pro", "After Effects", "IbisPaintX", "Blender"],
-        "description": "Théalia est un court-métrage réalisé en groupe de 5. Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de Koios cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même. Pour le meilleur ou pour le pire ?<br/><br/>J’ai été ingénieure son et graphiste sur ce projet. J’ai notamment réalisé deux affiches animées.",
-        "pictures": [
-            {
-                "file":"Thealia/poster1.gif",
-                "media":"picture"
-            },
-            {
-                "file":"Thealia/poster2.gif",
-                "media":"picture"
-            }
-        ]
-    },    
-    {
-        "name": "The Beast in the Village",
-        "order": 7,
-        "year": 2021,
-        "categories": [4],
-        "file": "TheBeastInTheVillage/cover.png",
-        "route": "thebeastinthevillage",
-        "contributors": ["Judicaëlle SIX"],
-        "tools": ["After Effects", "Illustrator"],
-        "description": "The Beast In The Village est une séquence titre réalisée par Natacha Liao et Judicaëlle Six pour un projet scolaire. Nous avons réimaginé Animal Crossing à la sauce policière. J’ai réalisé la seconde partie de la vidéo. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
-        "pictures": [
-            {
-                "file": "https://www.youtube.com/embed/TAq-ozovev0",
-                "media": "video"
-            }
-        ]
-    },    
-    {
-        "name": "Présentation Epifree",
+        "name": "Epifree",
         "order": 7,
         "year": 2020,
         "categories": [4],
         "file": "PresentationEpifree/cover.jpg",
-        "route": "presentationepifree",
+        "route": "epifree",
         "contributors": ["Kéziah VALORIS"],
         "tools": ["After Effects", "Illustrator"],
-        "description": "Epifree est une épicerie solidaire étudiante dont je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur proposant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé une vidéo de présentation en motion design avec Kéziah Valoris ainsi que des visuels pour les réseaux sociaux et des affiches.",
+        "description": "Epifree est une épicerie solidaire étudiante au sein de laquelle je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur distribuant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé une vidéo de présentation en motion design avec Kéziah Valoris ainsi que des visuels pour les réseaux sociaux et des affiches.<br/><br/>Voir la page facebook <a target='_blank' href='https://www.facebook.com/Epifree-UGE-109464603780131'>ici</a>.",
         "pictures": [
             {
                 "file": "https://www.youtube.com/embed/EtG9N1RlU7Q",
                 "media":"video"
+            }, {
+                "file": "PresentationEpifree/miel.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-01.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-02.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-03.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-04.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-05.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-06.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-07.png",
+                "media":"picture"
+            }, {
+                "file": "PresentationEpifree/chr10-08.png",
+                "media":"picture"
             }
         ]
+    },    
+    {
+        "name": "Magasin RPG",
+        "order": 3,
+        "year": 2019,
+        "categories": [2],
+        "file": "MagasinRPG/cover.png",
+        "route": "magasinrpg",
+        "contributors": ["Kéziah VALORIS", "Inconnu"],
+        "tools": ["PHP", "HTLM/CSS"],
+        "description": "Magasin RPG est un site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
+        "pictures": []
     }
 ]

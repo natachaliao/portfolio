@@ -7,7 +7,7 @@ const About = (props) => {
     <div className="about">
       <img className="portrait" alt="portrait" src={portrait}></img>
       <div className="about-desc">
-        <p>Etudiante à l'IMAC, je cherche un stage de 2/3 mois à compter du 7 juillet au plus tôt jusqu'au 7 septembre au plus tard.</p>
+        <p>Actuellement en 2ème année d'école d'ingénieurs dans la formation IMAC (Informatique, Multimédia, Audiovisuel et Communication), j'aime le développement web, le design graphique et le motion design. Je cherche un stage de 2/3 mois à compter du 7 juin au plus tôt jusqu'au 7 septembre au plus tard.</p>
         <span className="about-mail">
           <img alt="mail" src={mailImg}></img>
           <span>natacha-liao@live.fr</span>

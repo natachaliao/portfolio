@@ -8,6 +8,7 @@
 
 body {
   font-family: Poppins, 'Courier New', Courier, monospace;
+  /* background: #f3c1b9; */
 }
 
 h1 {
@@ -19,4 +20,5 @@ h1 {
 :root {
   --basic: rgb(34, 34, 34);
   --grey: rgb(233, 233, 233);
+  --accent: #05d584;
 }

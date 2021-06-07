@@ -9,6 +9,7 @@
     grid-template-columns: auto auto;
     gap: 2em;
     align-items: center;
+    text-align: justify;
 }
 
 .about-mail {
@@ -16,6 +17,7 @@
     grid-template-columns: min-content auto;
     align-items: center;
     gap: .6em;
+    margin: 1em 0;
 }
 
 .about-mail img {

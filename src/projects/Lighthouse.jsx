@@ -29,8 +29,9 @@ const Lighthouse = (props) => {
       <img className="close" alt="close" src={close} onClick={closeLightHouse}></img>
       <img className="left-arrow" alt="previous" src={arrow} onClick={() => onArrowClick("previous", current, pictures)}></img>
       <img className="right-arrow" alt="next" src={arrow} onClick={() => onArrowClick("next", current, pictures)}></img>
-      {displayItem(current, pictures[current].media, pictures[current].file, "", "currentPicture", "current")}
-      {/* <img className="currentPicture" alt="current" src={require("../assets/" + pictures[current].file).default}></img> */}
+      <div className="currentPicture">
+        {displayItem(current, pictures[current].media, pictures[current].file, "", "", "current")}
+      </div>
       <div className="l-items">
         {pictures.map((picture, i) => {
           let currentThumbnail = i === current ? "currentThumbnail" : "";

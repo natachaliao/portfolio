@@ -17,6 +17,8 @@ const Header = (props) => {
 
   useEffect(() => {
     selectedCategory(selectedHeaderCateg);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   })
 
   return (
