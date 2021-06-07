@@ -6,20 +6,45 @@
     display: grid;
     grid-template-columns: repeat(var(--colGallery), 1fr);
     gap: 1em;
-    margin: 5em;
+    margin: 5em 8em;
     justify-items: center;
+    grid-auto-rows: 13em;
+    /* background: var(--grey); */
 }
 
-.gallery > img {
+.gallery > *:not(.lighthouse) {
     width: 100%;
-    height: auto;
+    height: 100%;
+    /* width: 20em;
+    height: 13em; */
     cursor: pointer;
     position: relative;
     top: 0;
-    transition: width .3s ease, top .3s ease;
+    transition: width .3s ease, heigth .3s ease, top .3s ease;
+    object-fit: cover;
 }
 
-.gallery>img:hover {
+.gallery>*:not(.lighthouse):hover {
+    /* width: calc(1.05 * 20em);
+    height: calc(1.05 * 13em);
+    top: calc(-0.025 * 20em);     */
     width: 105%;
+    height: 105%;
     top: -2.5%;
+
+}
+
+.play-icon {
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: brightness(2) drop-shadow(0 0 .5em rgba(0, 0, 0, 0.5));
+}
+
+.videothumbnail-img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
 }

@@ -17,25 +17,33 @@
     align-items: center;
 }
 
-.l-pictures {
-    grid-area: thumbnails;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-template-rows: 100%;
-    gap: .5em;
+.l-items {
     height: 100%;
     width: 100%;
+    grid-area: thumbnails;
+    /* display: grid;
+    grid-template-columns: repeat(9, calc(100%/9 - .4em));
+    grid-template-rows: 100%;
+    gap: .5em; */
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.l-items > * {
+    height: 4.8em;
+    width: 7em;
+    cursor: pointer;
+    object-fit: cover;
+    margin-right: .5em;
     position: relative;
 }
 
-.l-pictures img {
-    height:100%;
-    width: auto;
-    cursor: pointer;
-}
-
-.l-pictures img:not(.currentThumbnail) {
-    filter: brightness(.5);
+.currentThumbnail {
+    border: solid rgb(255, 255, 255) .1em;
+    /* filter: brightness(100); */
 }
 
 .currentPicture {
@@ -77,4 +85,31 @@
 
 .close:hover {
     filter: brightness(1);
+}
+
+.currentPicture.video {
+    width: 80%;
+    height: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 1em;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    /* border-radius: 1em; */
+    background:rgb(94, 94, 94);
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(182, 182, 182); 
+    border-radius: 1em;
+}
+  
+/* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255); 
 }

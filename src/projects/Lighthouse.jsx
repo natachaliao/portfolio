@@ -4,42 +4,38 @@ import arrow from './../assets/utils/arrow.png';
 import close from './../assets/utils/close.png';
 
 const Lighthouse = (props) => {
-  const { current, pictures, setCurrent } = props;
+  const { current, pictures, setCurrent, displayItem } = props;
 
   useEffect(() => document.body.style.overflow = "hidden", []);
 
-  const onClickThumbnail = (picture) => {
-    let i = 0;
-    while(i<pictures.length) {
-      if(picture === pictures[i]) {
-        setCurrent(pictures[i]);
-        return
-      }
-      i++;
+  const onArrowClick = (type, current, pictures) => {
+    const s = type === "next" ? 1 : -1;
+    const index = (current+s+Math.max(pictures.length*(-s+current), 0))%pictures.length;
+    if(index >= pictures.length && index < 0) {
+      console.error("index out of bound");
+      setCurrent(-1);
+      return;
     }
+    setCurrent(index);
   }
 
   const closeLightHouse = () => {
-    setCurrent(null);
-    document.body.style.overflow = "inherit";
+    setCurrent(-1);
+    document.body.style.overflow = "initial";
   }
 
   return (
     <div className="lighthouse">
-      <img className="close" src={close} onClick={closeLightHouse}></img>
-      {/* <img className="left-arrow" src={arrow}></img> */}
-      {/* <img className="right-arrow" src={arrow}></img> */}
-      <img className="currentPicture" src={require("../assets/" + current).default}></img>
-      <div className="l-pictures">
+      <img className="close" alt="close" src={close} onClick={closeLightHouse}></img>
+      <img className="left-arrow" alt="previous" src={arrow} onClick={() => onArrowClick("previous", current, pictures)}></img>
+      <img className="right-arrow" alt="next" src={arrow} onClick={() => onArrowClick("next", current, pictures)}></img>
+      {displayItem(current, pictures[current].media, pictures[current].file, "", "currentPicture", "current")}
+      {/* <img className="currentPicture" alt="current" src={require("../assets/" + pictures[current].file).default}></img> */}
+      <div className="l-items">
         {pictures.map((picture, i) => {
-          let currentThumbnail = picture === current ? "currentThumbnail" : "";
-          console.log(picture);
-          return (<img 
-              className={currentThumbnail} 
-              key={`l-picture-${i}`} 
-              src={require("../assets/" + picture).default}
-              onClick={() => onClickThumbnail(picture)}>
-            </img>);
+          let currentThumbnail = i === current ? "currentThumbnail" : "";
+          let media = picture.media === "video" ? "video-thumbnail" : picture.media;
+          return displayItem(i, media, picture.file, `l-item-${i}`, currentThumbnail, "thumbnail");
         })}
       </div>
     </div>

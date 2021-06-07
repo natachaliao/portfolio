@@ -21,10 +21,10 @@ const Header = (props) => {
 
   return (
     <div id="header">
-      <h1 id="h-title" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "home")}><Link to="/home">{name}</Link></h1>
+      <h1 id="h-title" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "portfolio")}><Link to="/home">{name}</Link></h1>
       <div id="h-categories">
-        <span id="h-contact" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "contact")}>Contact</span>
-        <span id="h-apropos" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "apropos")}>A propos</span>
+        <span id="h-portfolio" className="selected" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "portfolio")}><Link to="/home">Portfolio</Link></span>
+        <span id="h-apropos" onClick={() => setSelectedHeaderCateg(selectedHeaderCateg => "apropos")}><Link to="/apropos">A propos</Link></span>
       </div>
     </div>
   )

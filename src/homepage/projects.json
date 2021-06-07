@@ -9,7 +9,18 @@
         "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
         "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator"],
         "description": "Dans le cadre d’un projet tutoré, j’ai réalisée en équipe de 4 un site web full-stack en collaboration avec la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js., d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
-        "pictures": ["Projet89/highlight&preview.PNG", "Projet89/document.png", "Projet89/admin.png"]
+        "pictures": [
+            {
+                "file": "Projet89/highlight&preview.PNG",
+                "media": "picture"
+            }, {
+                "file": "Projet89/document.png", 
+                "media": "picture"
+            }, {
+                "file": "Projet89/admin.png", 
+                "media": "picture"
+            }
+        ]
     },    
     {
         "name": "Wishing You Good Night",
@@ -20,8 +31,13 @@
         "route": "wishingyougoodnight",
         "contributors": [],
         "tools": ["IbisPaintX"],
-        "description": "",
-        "pictures": []
+        "description": "Une carte illustrée représentant une jeune fille dans une mise en scène à la fois théâtrale et onirique.",
+        "pictures": [
+            {
+                "file":"WishingYouGoodNight/cover.png",
+                "media":"picture"
+            }
+        ]
     },    
     {
         "name": "Magasin RPG",
@@ -32,7 +48,7 @@
         "route": "magasinrpg",
         "contributors": ["Kéziah VALORIS", "Inconnu"],
         "tools": ["PHP", "HTLM/CSS"],
-        "description": "",
+        "description": "RPG shop est une site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
         "pictures": []
     },    
     {
@@ -44,8 +60,16 @@
         "route": "goldentale",
         "contributors": ["Kéziah VALORIS"],
         "tools": ["Photoshop", "InDesign", "MagicaVoxel"],
-        "description": "",
-        "pictures": []
+        "description": "Golden Tale est un parc d’attractions fictif sur le thème des contes de fée. J’ai réalisé l’affiche, la carte et en partie le document de charte graphique. La carte a été réalisée avec MagicaVoxel. Découvrez le monde onirique de Golden Tale !",
+        "pictures": [
+            {
+                "file": "GoldenTale/cover.png",
+                "media": "picture"
+            }, {
+                "file": "GoldenTale/affiche.png",
+                "media":"picture"
+            }
+        ]
     },    
     {
         "name": "Babelio Kids",
@@ -56,8 +80,16 @@
         "route": "babeliokids",
         "contributors": [],
         "tools": ["Figma"],
-        "description": "",
-        "pictures": []
+        "description": "Dans le cadre d’un exercice, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. J’ai travaillé à rendre le site plus compréhensible et attrayant pour les enfants. Voici les maquettes réalisées sur Figma de la page d’accueil et de la page de résultats d’un des genres.",
+        "pictures": [
+            {
+                "file": "BabelioKids/homepage.png",
+                "media": "picture"
+            }, {
+                "file": "BabelioKids/genre.png",
+                "media": "picture"
+            }
+        ]
     },    
     {
         "name": "Théalia",
@@ -68,8 +100,17 @@
         "route": "thealia",
         "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
         "tools": ["Premiere Pro", "After Effects", "IbisPaintX", "Blender"],
-        "description": "",
-        "pictures": []
+        "description": "Théalia est un court-métrage réalisé en groupe de 5. Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de Koios cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même. Pour le meilleur ou pour le pire ?<br/><br/>J’ai été ingénieure son et graphiste sur ce projet. J’ai notamment réalisé deux affiches animées.",
+        "pictures": [
+            {
+                "file":"Thealia/poster1.gif",
+                "media":"picture"
+            },
+            {
+                "file":"Thealia/poster2.gif",
+                "media":"picture"
+            }
+        ]
     },    
     {
         "name": "The Beast in the Village",
@@ -78,10 +119,15 @@
         "categories": [4],
         "file": "TheBeastInTheVillage/cover.png",
         "route": "thebeastinthevillage",
-        "contributors": ["Judicaêlle SIX"],
+        "contributors": ["Judicaëlle SIX"],
         "tools": ["After Effects", "Illustrator"],
-        "description": "",
-        "pictures": []
+        "description": "The Beast In The Village est une séquence titre réalisée par Natacha Liao et Judicaëlle Six pour un projet scolaire. Nous avons réimaginé Animal Crossing à la sauce policière. J’ai réalisé la seconde partie de la vidéo. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
+        "pictures": [
+            {
+                "file": "https://www.youtube.com/embed/TAq-ozovev0",
+                "media": "video"
+            }
+        ]
     },    
     {
         "name": "Présentation Epifree",
@@ -92,7 +138,12 @@
         "route": "presentationepifree",
         "contributors": ["Kéziah VALORIS"],
         "tools": ["After Effects", "Illustrator"],
-        "description": "",
-        "pictures": []
+        "description": "Epifree est une épicerie solidaire étudiante dont je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur proposant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé une vidéo de présentation en motion design avec Kéziah Valoris ainsi que des visuels pour les réseaux sociaux et des affiches.",
+        "pictures": [
+            {
+                "file": "https://www.youtube.com/embed/EtG9N1RlU7Q",
+                "media":"video"
+            }
+        ]
     }
 ]

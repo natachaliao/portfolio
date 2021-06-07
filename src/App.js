@@ -5,6 +5,7 @@ import Header from './all/Header';
 import { Contact } from './all/Contact';
 import { ProjectPage } from './projects/ProjectPage';
 import projects from './homepage/projects.json';
+import { About } from './about/About';
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
             <Contact mail="natacha-liao@live.fr"/>
           </Route>
         )}
+
+        <Route path="/apropos">
+          <Header name="Natacha Liao" />
+          <About/>
+          <Contact mail="natacha-liao@live.fr"/>
+        </Route>
         
         <Route>
           <Header name="Natacha Liao" />

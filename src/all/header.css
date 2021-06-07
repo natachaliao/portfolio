@@ -11,7 +11,7 @@
     cursor: pointer;
 }
 
-#h-title a {
+#header a {
     text-decoration: none;
     color: var(--basic);
 }
