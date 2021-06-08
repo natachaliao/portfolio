@@ -24,6 +24,7 @@
     position: absolute;
     top: 0;
     transition: opacity .3s ease;
+    overflow: hidden;
 }
 
 .projprev-hover:hover {
@@ -47,4 +48,17 @@
 .projprev-categories {
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    #projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5em;
+        justify-content: stretch;
+    }
+    .projprev {
+        position: relative;
+        height: 7em;
+    }
 }

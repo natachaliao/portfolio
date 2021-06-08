@@ -34,3 +34,11 @@
 .about-mail a:hover {
     color: var(--accent);
 }
+
+@media only screen and (max-width: 768px) {
+    .about {
+        margin: 1em auto 3em;
+        grid-template-columns: auto;
+        gap: .5em;
+    }
+}

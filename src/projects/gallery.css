@@ -48,3 +48,15 @@
     height: inherit;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 768px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        margin: 1em;
+        justify-items: center;
+        grid-auto-rows: 8em;
+        /* background: var(--grey); */
+    }
+}

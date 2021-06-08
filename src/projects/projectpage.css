@@ -52,3 +52,28 @@
 .projectpage a:hover {
     color: #009159;
 }
+
+@media only screen and (max-width: 768px) {
+    .projectpage-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "date tools"
+        "desc desc";
+        gap: 1em;
+        margin: 1em;
+        text-align: justify;
+    }
+    #date {
+        grid-area: date;
+    }
+    #tools {
+        grid-area: tools;
+    }
+    .projectpage-desc {
+        grid-area: desc;
+    }
+    .projectpage-title {
+        font-size: 60px;
+    }
+    
+}

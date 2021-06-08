@@ -45,3 +45,11 @@
     width: 100%;
     left: 0;
 }
+
+@media only screen and (max-width: 768px) {
+    #header {
+        text-align: center;
+        padding: 1em;
+    }
+    
+}

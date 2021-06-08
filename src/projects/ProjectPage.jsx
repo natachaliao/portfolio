@@ -2,7 +2,7 @@ import './projectpage.css';
 import { Gallery } from './Gallery';
 
 const ProjectPage = (props) => {
-  const { name, file, contributors, tools, description, pictures, date } = props.project;
+  const { name, file, tools, description, pictures, date } = props.project;
   const path = require("../assets/" + file).default;
   return (
     <div className="projectpage">
