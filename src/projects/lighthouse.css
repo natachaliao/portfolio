@@ -114,4 +114,8 @@
     .left-arrow, .right-arrow {
         display: none;
     }
+    .close {
+        top: 1em;
+        right: 5em;
+    }
 }
