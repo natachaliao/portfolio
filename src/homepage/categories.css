@@ -27,5 +27,10 @@
     #p-categories {
         margin: 1em 0;
         overflow:auto;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .p-category {
+        margin: .2em;
     }
 }

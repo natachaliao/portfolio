@@ -15,7 +15,7 @@
     gap: 1em;
     justify-items: center;
     align-items: center;
-    z-index: 99;
+    z-index: 90;
     animation: .3s fadeout paused;
 }
 
@@ -88,6 +88,7 @@
     cursor: pointer;
     filter: brightness(.5);
     transition: filter .3s ease;
+    z-index: 91;
 }
 
 .close:hover {
@@ -96,4 +97,21 @@
 
 @keyframes fadeout {
     from { opacity: 1;} to { opacity: 0; }
+}
+
+@media only screen and (max-width: 768px) {
+    .lighthouse {
+        width: 100vw;
+        height: 100vh;
+        padding: 2em;
+        grid-template-rows: calc(100% - 10em) 5em;
+        grid-template-columns: 5em calc(100% - 16em) 5em;
+        grid-template-areas: 
+        "current current current"
+        "thumbnails thumbnails thumbnails";
+        gap: 1em;
+    }
+    .left-arrow, .right-arrow {
+        display: none;
+    }
 }
