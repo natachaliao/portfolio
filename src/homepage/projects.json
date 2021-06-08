@@ -10,49 +10,6 @@
         "tools": ["React", "CSS"],
         "description": "J'ai entièrement codé ce site, abritant mon portfolio, avec React.",
         "pictures": []
-    },
-    {
-        "name": "Covid Vaccine",
-        "order": 9,
-        "date": 2021,
-        "categories": [1, 2],
-        "file": "CovidVaccine/graph.png",
-        "route": "covidvaccine",
-        "contributors": ["Léa LAFFITTE", "Kéziah VALORIS"],
-        "tools": ["Three.js", "HTML/CSS/JS"],
-        "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder le site et notamment de réaliser le globe terrestre avec la bibliothèque three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
-        "pictures": [
-            {
-                "file":"CovidVaccine/homepage.png",
-                "media": "picture"
-            }, {
-                "file":"CovidVaccine/explanation1.png",
-                "media": "picture"
-            }, {
-                "file":"CovidVaccine/explanation2.png",
-                "media": "picture"
-            }, {
-                "file":"CovidVaccine/graph.png",
-                "media": "picture"
-            }
-        ]
-    },    
-    {
-        "name": "The Beast in the Village",
-        "order": 7,
-        "date": 2021,
-        "categories": [4],
-        "file": "TheBeastInTheVillage/cover.png",
-        "route": "thebeastinthevillage",
-        "contributors": ["Judicaëlle SIX"],
-        "tools": ["After Effects", "Illustrator"],
-        "description": "The Beast In The Village est une séquence titre en motion design réalisée à deux pour un projet scolaire et inspiré du jeu Animal Crossing que nous avons réimaginé à la sauce policière. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo sur Illustrator. J’ai réalisé la seconde partie de cette dernière à partir de 1:04.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
-        "pictures": [
-            {
-                "file": "https://www.youtube.com/embed/TAq-ozovev0",
-                "media": "video"
-            }
-        ]
     },    
     {
         "name": "Babelio Kids",
@@ -109,6 +66,49 @@
             }, {
                 "file": "Projet89/utopie.png", 
                 "media": "picture"
+            }
+        ]
+    },
+    {
+        "name": "Covid Vaccine",
+        "order": 9,
+        "date": 2021,
+        "categories": [1, 2],
+        "file": "CovidVaccine/graph.png",
+        "route": "covidvaccine",
+        "contributors": ["Léa LAFFITTE", "Kéziah VALORIS"],
+        "tools": ["Three.js", "HTML/CSS/JS"],
+        "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder notre preuve de concept en ligne et notamment de réaliser le globe terrestre avec la bibliothèque three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
+        "pictures": [
+            {
+                "file":"CovidVaccine/homepage.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/explanation1.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/explanation2.png",
+                "media": "picture"
+            }, {
+                "file":"CovidVaccine/graph.png",
+                "media": "picture"
+            }
+        ]
+    },    
+    {
+        "name": "The Beast in the Village",
+        "order": 7,
+        "date": 2021,
+        "categories": [4],
+        "file": "TheBeastInTheVillage/cover.png",
+        "route": "thebeastinthevillage",
+        "contributors": ["Judicaëlle SIX"],
+        "tools": ["After Effects", "Illustrator"],
+        "description": "The Beast In The Village est une séquence titre en motion design réalisée à deux pour un projet scolaire et inspiré du jeu Animal Crossing que nous avons réimaginé à la sauce policière. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo sur Illustrator. J’ai réalisé la seconde partie de cette dernière à partir de 1:04.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
+        "pictures": [
+            {
+                "file": "https://www.youtube.com/embed/TAq-ozovev0",
+                "media": "video"
             }
         ]
     },    
