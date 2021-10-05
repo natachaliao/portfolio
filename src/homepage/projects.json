@@ -1,4 +1,33 @@
-[
+[    
+    {
+        "name": "Meishi",
+        "order": 10,
+        "date": 2021,
+        "categories": [1],
+        "file": "Meishi/cover.PNG",
+        "route": "meishi",
+        "contributors": [],
+        "tools": ["Figma"],
+        "description": "J'ai réalisé en tant que projet personnel la maquette d'un site de restauration chinoise appelé Meishi. J'ai créé 5 pages : accueil, menu, avis, commande, réservation.",
+        "pictures": [
+            {
+                "file": "Meishi/homepage.gif",
+                "media": "picture"
+            }, {
+                "file": "Meishi/menu.gif",
+                "media": "picture"
+            }, {
+                "file": "Meishi/reviews.gif",
+                "media": "picture"
+            }, {
+                "file": "Meishi/book.gif",
+                "media": "picture"
+            }, {
+                "file": "Meishi/order.gif",
+                "media": "picture"
+            }
+        ]
+    },
     {
         "name": "Ce Portfolio",
         "order": 8,
@@ -134,46 +163,38 @@
         ]
     },    
     {
-        "name": "Wishing You Good Night",
+        "name": "Illustrations",
         "order": 2,
-        "date": 2019,
+        "date": "2019-2021",
         "categories": [3],
-        "file": "WishingYouGoodNight/WishingYouGoodNight.png",
-        "route": "wishingyougoodnight",
+        "file": "Illustrations/WishingYouGoodNight.png",
+        "route": "illustrations",
         "contributors": [],
         "tools": ["iPad & Apple Pencil"],
-        "description": "Une carte illustrée représentant une jeune fille dans une mise en scène théâtrale et onirique.",
+        "description": "J'aime dessiner à mes heures perdues. Voici certaines de mes réalisations.",
         "pictures": [
             {
-                "file":"WishingYouGoodNight/Little Dryad (RECTO).PNG",
+                "file":"Illustrations/Little Dryad (RECTO).PNG",
                 "media":"picture"
             },
             {
-                "file":"WishingYouGoodNight/Little Dryad (VERSO).PNG",
+                "file":"Illustrations/Donatella (RECTO).PNG",
                 "media":"picture"
             },
             {
-                "file":"WishingYouGoodNight/Donatello (RECTO).PNG",
+                "file":"Illustrations/At the beach.PNG",
                 "media":"picture"
             },
             {
-                "file":"WishingYouGoodNight/Donatello (VERSO).PNG",
+                "file":"Illustrations/Formal Dress.PNG",
                 "media":"picture"
             },
             {
-                "file":"WishingYouGoodNight/At the beach.PNG",
+                "file":"Illustrations/WishingYouGoodNight.png",
                 "media":"picture"
             },
             {
-                "file":"WishingYouGoodNight/Formal Dress.PNG",
-                "media":"picture"
-            },
-            {
-                "file":"WishingYouGoodNight/WishingYouGoodNight.png",
-                "media":"picture"
-            },
-            {
-                "file":"WishingYouGoodNight/Starlight Show.png",
+                "file":"Illustrations/Starlight Show.png",
                 "media":"picture"
             }
         ]
