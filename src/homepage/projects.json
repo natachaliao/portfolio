@@ -138,14 +138,42 @@
         "order": 2,
         "date": 2019,
         "categories": [3],
-        "file": "WishingYouGoodNight/cover.png",
+        "file": "WishingYouGoodNight/WishingYouGoodNight.png",
         "route": "wishingyougoodnight",
         "contributors": [],
         "tools": ["iPad & Apple Pencil"],
         "description": "Une carte illustrée représentant une jeune fille dans une mise en scène théâtrale et onirique.",
         "pictures": [
             {
-                "file":"WishingYouGoodNight/cover.png",
+                "file":"WishingYouGoodNight/Little Dryad (RECTO).PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/Little Dryad (VERSO).PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/Donatello (RECTO).PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/Donatello (VERSO).PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/At the beach.PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/Formal Dress.PNG",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/WishingYouGoodNight.png",
+                "media":"picture"
+            },
+            {
+                "file":"WishingYouGoodNight/Starlight Show.png",
                 "media":"picture"
             }
         ]
