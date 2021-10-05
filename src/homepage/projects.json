@@ -136,7 +136,7 @@
     {
         "name": "Wishing You Good Night",
         "order": 2,
-        "date": 2020,
+        "date": "2019-2021",
         "categories": [3],
         "file": "WishingYouGoodNight/cover.png",
         "route": "wishingyougoodnight",
