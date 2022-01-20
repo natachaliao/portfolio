@@ -7,7 +7,7 @@
         "file": "Formaxe/cover.png",
         "route": "formaxe",
         "contributors": [],
-        "tools": ["Illustrator", "After Effects", "Figma"],
+        "tools": ["Illustrator", "Photoshop", "After Effects", "Figma", "HTML/CSS"],
         "description": "J'ai réalisé un stage de 2 mois dans l'organisme de formation Formaxe où j'ai tenu le rôle de graphiste. Formaxe a lancé une plateforme Stafy destinée à ses formateurs et qui leur permet de réaliser des démarches administratives. Durant ce stage, j'ai réalisé des icônes pour le site de Formaxe, des visuels pour ses réseaux sociaux, des vidéos en motion design, la mise en page de livrets, le design de pages web ainsi que le codage d'une signature mail.<br/><br/>Voici le site de Formaxe <a href='https://formaxe.com' target='_blank'>ici</a> et celui de Stafy <a href='https://www.stafy.fr' target='_blank'>ici</a>.",
         "pictures": [
             {
@@ -40,19 +40,19 @@
         "description": "J'ai réalisé en tant que projet personnel la maquette d'un site de restauration chinoise appelé Meishi. J'ai créé 5 pages : accueil, menu, avis, commande, réservation.",
         "pictures": [
             {
-                "file": "Meishi/homepage.gif",
+                "file": "Meishi/homepage.jpg",
                 "media": "picture"
             }, {
-                "file": "Meishi/menu.gif",
+                "file": "Meishi/menu.jpg",
                 "media": "picture"
             }, {
-                "file": "Meishi/reviews.gif",
+                "file": "Meishi/reviews.jpg",
                 "media": "picture"
             }, {
-                "file": "Meishi/book.gif",
+                "file": "Meishi/book.jpg",
                 "media": "picture"
             }, {
-                "file": "Meishi/order.gif",
+                "file": "Meishi/order.jpg",
                 "media": "picture"
             }
         ]
@@ -65,7 +65,7 @@
         "file": "Portfolio/cover.png",
         "route": "ceportfolio",
         "contributors": [],
-        "tools": ["React", "CSS"],
+        "tools": ["React", "HTML/CSS"],
         "description": "J'ai entièrement codé ce site, abritant mon portfolio, avec React.",
         "pictures": []
     },    
@@ -97,7 +97,7 @@
         "file": "Projet89/cover.png",
         "route": "projet89",
         "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
-        "tools": ["React", "CSS", "Figma", "Photoshop", "Illustrator", "iPad & Apple Pencil"],
+        "tools": ["React", "HTML/CSS", "Figma", "Photoshop", "Illustrator", "iPad & Apple Pencil"],
         "description": "Dans le cadre d’un projet tutoré, j’ai réalisé en équipe de 4 un site web full-stack en collaboration avec une compagnie de théâtre nommée la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js, d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes en utilisant Illustrator.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
         "pictures": [
             {
@@ -303,7 +303,7 @@
         "file": "MagasinRPG/cover.png",
         "route": "magasinrpg",
         "contributors": ["Kéziah VALORIS", "Amélie CROUIGNEAU", "Achraf LEMGHARI"],
-        "tools": ["PHP", "HTLM/CSS/JS"],
+        "tools": ["PHP", "HTML/CSS/JS"],
         "description": "Magasin RPG est un site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
         "pictures": [
             {
