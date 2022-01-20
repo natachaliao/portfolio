@@ -1,5 +1,34 @@
 [    
     {
+        "name": "Formaxe",
+        "order": 11,
+        "date": 2021,
+        "categories": [1, 3, 4],
+        "file": "Formaxe/cover.png",
+        "route": "formaxe",
+        "contributors": [],
+        "tools": ["Illustrator", "After Effects", "Figma"],
+        "description": "J'ai réalisé un stage de 2 mois dans l'organisme de formation Formaxe où j'ai tenu le rôle de graphiste. Formaxe a lancé une plateforme Stafy destinée à ses formateurs et qui leur permet de réaliser des démarches administratives. Durant ce stage, j'ai réalisé des icônes pour le site de Formaxe, des visuels pour ses réseaux sociaux, des vidéos en motion design, la mise en page de livrets, le design de pages web ainsi que le codage d'une signature mail.<br/><br/>Voici le site de Formaxe <a href='https://formaxe.com' target='_blank'>ici</a> et celui de Stafy <a href='https://www.stafy.fr' target='_blank'>ici</a>.",
+        "pictures": [
+            {
+                "file": "Formaxe/icons.png",
+                "media": "picture"
+            }, {
+                "file": "Formaxe/box.png",
+                "media": "picture"
+            }, {
+                "file": "Formaxe/visual RS.png",
+                "media": "picture"
+            }, {
+                "file": "Formaxe/signature.png",
+                "media": "picture"
+            }, {
+                "file": "Formaxe/page 1.jpg",
+                "media": "picture"
+            }
+        ]
+    },
+    {
         "name": "Meishi",
         "order": 10,
         "date": 2021,
