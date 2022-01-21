@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b6bad3c2.chunk.css",
+    "main.css": "/portfolio/static/css/main.28a084ac.chunk.css",
     "main.js": "/portfolio/static/js/main.17f455b6.chunk.js",
     "main.js.map": "/portfolio/static/js/main.17f455b6.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.fe18b915.js",
@@ -10,7 +10,7 @@
     "static/js/3.7ee4fb62.chunk.js": "/portfolio/static/js/3.7ee4fb62.chunk.js",
     "static/js/3.7ee4fb62.chunk.js.map": "/portfolio/static/js/3.7ee4fb62.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.b6bad3c2.chunk.css.map": "/portfolio/static/css/main.b6bad3c2.chunk.css.map",
+    "static/css/main.28a084ac.chunk.css.map": "/portfolio/static/css/main.28a084ac.chunk.css.map",
     "static/js/2.d5603fd5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d5603fd5.chunk.js.LICENSE.txt",
     "static/media/At the beach.PNG": "/portfolio/static/media/At the beach.14ce37f6.PNG",
     "static/media/Bolandes - Light.ttf": "/portfolio/static/media/Bolandes - Light.1c9196fc.ttf",
@@ -78,7 +78,7 @@
   "entrypoints": [
     "static/js/runtime-main.fe18b915.js",
     "static/js/2.d5603fd5.chunk.js",
-    "static/css/main.b6bad3c2.chunk.css",
+    "static/css/main.28a084ac.chunk.css",
     "static/js/main.17f455b6.chunk.js"
   ]
 }
