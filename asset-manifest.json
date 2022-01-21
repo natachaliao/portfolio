@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.de3a3a3c.chunk.css",
-    "main.js": "/portfolio/static/js/main.d66773aa.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d66773aa.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.f7871330.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f7871330.js.map",
-    "static/js/2.c8037d6b.chunk.js": "/portfolio/static/js/2.c8037d6b.chunk.js",
-    "static/js/2.c8037d6b.chunk.js.map": "/portfolio/static/js/2.c8037d6b.chunk.js.map",
-    "static/js/3.bb8b13b6.chunk.js": "/portfolio/static/js/3.bb8b13b6.chunk.js",
-    "static/js/3.bb8b13b6.chunk.js.map": "/portfolio/static/js/3.bb8b13b6.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b6bad3c2.chunk.css",
+    "main.js": "/portfolio/static/js/main.17f455b6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.17f455b6.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.fe18b915.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.fe18b915.js.map",
+    "static/js/2.d5603fd5.chunk.js": "/portfolio/static/js/2.d5603fd5.chunk.js",
+    "static/js/2.d5603fd5.chunk.js.map": "/portfolio/static/js/2.d5603fd5.chunk.js.map",
+    "static/js/3.7ee4fb62.chunk.js": "/portfolio/static/js/3.7ee4fb62.chunk.js",
+    "static/js/3.7ee4fb62.chunk.js.map": "/portfolio/static/js/3.7ee4fb62.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.de3a3a3c.chunk.css.map": "/portfolio/static/css/main.de3a3a3c.chunk.css.map",
-    "static/js/2.c8037d6b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.c8037d6b.chunk.js.LICENSE.txt",
+    "static/css/main.b6bad3c2.chunk.css.map": "/portfolio/static/css/main.b6bad3c2.chunk.css.map",
+    "static/js/2.d5603fd5.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d5603fd5.chunk.js.LICENSE.txt",
     "static/media/At the beach.PNG": "/portfolio/static/media/At the beach.14ce37f6.PNG",
+    "static/media/Bolandes - Light.ttf": "/portfolio/static/media/Bolandes - Light.1c9196fc.ttf",
     "static/media/Donatella (RECTO).PNG": "/portfolio/static/media/Donatella (RECTO).3dc09371.PNG",
     "static/media/Formal Dress.PNG": "/portfolio/static/media/Formal Dress.aef324df.PNG",
     "static/media/Little Dryad (RECTO).PNG": "/portfolio/static/media/Little Dryad (RECTO).65fa6032.PNG",
@@ -75,9 +76,9 @@
     "static/media/visual RS.png": "/portfolio/static/media/visual RS.c13edb45.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7871330.js",
-    "static/js/2.c8037d6b.chunk.js",
-    "static/css/main.de3a3a3c.chunk.css",
-    "static/js/main.d66773aa.chunk.js"
+    "static/js/runtime-main.fe18b915.js",
+    "static/js/2.d5603fd5.chunk.js",
+    "static/css/main.b6bad3c2.chunk.css",
+    "static/js/main.17f455b6.chunk.js"
   ]
 }
