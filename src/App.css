@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap'); */
+
+@font-face {
+  font-family: "Bolandes";
+  src: url("/src/assets/utils/Bolandes\ -\ Light.ttf");
+}
 
 body {
   font-family: Poppins, 'Courier New', Courier, monospace;
-  /* background: #f3c1b9; */
 }
 
 h1 {
-  /* font-family: Stint Ultra Condensed, 'Courier New', Courier, monospace; */
-  font-family: Satisfy, 'Courier New', Courier, monospace;
-  /* font-family: Playfair Display, 'Courier New', Courier, monospace; */
+  font-family: Bolandes, 'Courier New', Courier, monospace;
 }
 
 :root {
