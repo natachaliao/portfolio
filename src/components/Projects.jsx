@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './projects.css';
-import { ReactComponent as Frame1 } from './../assets/utils/frame2.svg';
+import { ReactComponent as Frame1 } from './../assets/utils/frame3.svg';
 
 const Projects = (props) => {
   const { projects, setSelectedHeaderCateg } = props;
@@ -30,17 +30,32 @@ const Project = (props) => {
     });
   }
 
-  const getImageDimensions = (path) => {
-    return new Promise(resolve => {
-      let width; let height;
-      let file = new Image();
-      file.onload = function() {
-        width = file.width;
-        height = file.height;
-        resolve({width, height});
-      };
-      file.src = path;
-    })
+  const addPattern = (svg, idName, patternToAdd) => {
+
+    let id = `pattern-${idName}`;
+    var svgNS = svg.namespaceURI;
+
+    var pattern = document.createElementNS(svgNS, 'pattern');
+
+    pattern.setAttributeNS(svgNS, 'patternUnits', 'userSpaceOnUse');
+    pattern.id = id;
+    pattern.style.width = '1200';
+    pattern.style.height = '600';
+
+    // var image = document.createElementNS(svgNS, 'image');
+    // image.style.x = 0;
+    // image.style.y = 0;
+    // image.style.width = '1200';
+    // image.style.height = '600';
+
+    pattern.appendChild(patternToAdd);
+
+    var defs = svg.querySelector('defs') ||
+        svg.insertBefore(document.createElementNS(svgNS, 'defs'), svg.firstChild);
+
+    svg.querySelector('path').style.fill = 'url(#' + id + ')';
+
+    return defs.appendChild(pattern);
   }
 
   const changePattern = async (svg, idName, path) => {
@@ -50,38 +65,31 @@ const Project = (props) => {
 
     let image = svg.querySelector('image');
     image.setAttribute('href', path);
-
-
-    // Get width and height of image file
-
-    let {width, height} = await getImageDimensions(path);
-
-    console.log(idName)
-    console.log('width = ', width)
-    console.log('height = ', height)
-
     image.setAttribute("preserveAspectRatio", "xMidYMid slice");
-
     image.style.width = '100%';
     image.style.height = '100%';
 
-    // if(width > height) {
-    //   image.style.width = 'auto';
-    //   image.style.height = '100%';
-    // }
-    // else {
-    //   image.style.width = '100%';
-    //   image.style.height = 'auto';
-    // }
-
     let framedPicture = svg.querySelector('.placeholder');
     framedPicture.setAttribute('fill', 'url(#' + id + ')');
+  }
+
+  const createInfoOnHover = () => {
+    (
+      <div className="projprev-hover">
+        <h3 className="projprev-title">{name}</h3>
+        <div className="projprev-categories">
+          {categories.map((category, index) => <span key={`projprev-category-${index}`}>{category}</span>)}
+        </div>
+      </div>
+    )
   }
 
   useEffect(() => {
     animateProject();
     const svg = document.querySelector(`#frame-${idName}`)
     changePattern(svg, idName, path);
+    
+    // addPattern(svg, `info-${idName}`, createInfoOnHover());
   })
 
   return (
@@ -92,23 +100,53 @@ const Project = (props) => {
       onClick={() => setSelectedHeaderCateg()}
     >
 
-      <Frame1 className='frame'id={`frame-${idName}`} />
-      {/* <img src={Frame1bis} alt="React Logo" /> */}
+      <Frame1 className='frame' id={`frame-${idName}`} />
 
-      {/* <div className='inside-frame'>
-        <img alt="" src={path}></img>
-        
-        <div className="projprev-hover">
-          <h3 className="projprev-title">{name}</h3>
-          <div className="projprev-categories">
-            {categories.map((category, index) => <span key={`projprev-category-${index}`}>{category}</span>)}
-          </div>
-        </div>        
-      </div> */}
+      <ProjectHover idName={idName} name={name} categories={categories} />
 
     </Link>
   )
 }
 
+const ProjectHover = (props) => {
+  
+  const { idName, name, categories } = props;
+
+  const [ left, setLeft ] = useState(0);
+  const [ top, setTop ] = useState(0);
+  const [ width, setWidth ] = useState(0);
+  const [ height, setHeight ] = useState(0);
+  const [ transform, setTransform ] = useState('');
+
+  const placeProjectHover = (id) => {
+    const placeholder = document.querySelector(`#${id} .placeholder`);
+    if(!placeholder) return
+    const rect = placeholder.getBoundingClientRect();
+    const { left, top, width, height } = rect;
+    const transform = `translateY(${window.scrollY}px)`;
+    setTransform(transform);
+    setWidth(width);
+    setHeight(height);
+    setTop(top);
+    setLeft(left);
+  } 
+
+  useEffect(() => {
+    placeProjectHover(`projprev-${idName}`);
+  }, [])
+
+  useEffect(() => {
+    window.addEventListener('resize', () => placeProjectHover(`projprev-${idName}`))
+  })
+
+  return (
+    <div className="projprev-hover" style={{width: width, height: height, top: top, left: left, transform: transform}}>
+      <h3 className="projprev-title">{name}</h3>
+      <div className="projprev-categories">
+        {categories.map((category, index) => <span key={`projprev-category-${index}`}>{category}</span>)}
+      </div>
+    </div>
+  )
+}
 
 export { Projects };

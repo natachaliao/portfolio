@@ -14,15 +14,15 @@
     border: solid 2px black;
 }
 
-.projprev {
+/* .projprev {
     position: relative;
-    /* height: 15em; */
-}
+    height: 15em;
+} */
 
 .projprev-hover {
-    width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
+    /* width: 100%;
+    height: 100%; */
+    background: red;
     color:  var(--basic);
     display: flex;
     flex-direction: column;
@@ -66,8 +66,8 @@
         gap: .5em;
         justify-content: stretch;
     }
-    .projprev {
+    /* .projprev {
         position: relative;
-        /* height: 7em; */
-    }
+        height: 7em;
+    } */
 }
