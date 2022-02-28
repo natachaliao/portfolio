@@ -6,8 +6,8 @@
 
 .p-category {
     background: var(--grey);
-    border-radius: 1.5em;
-    padding: .5em .8em;
+    /* border-radius: 1.5em; */
+    padding: .5em 1em;
     text-align: center;
     transition: background .3s ease, color .3s linear;
 }

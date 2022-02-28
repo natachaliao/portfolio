@@ -7,6 +7,9 @@ import { Contact } from './components/Contact';
 import { ProjectPage } from './pages/ProjectPage';
 import projects from './data/projects.json';
 import { About } from './pages/About';
+import Test from './Test';
+import Test2 from './Test2';
+import Test3 from './Test3';
 
 function App() {
   const [ selectedHeaderCateg, setSelectedHeaderCateg ] = useState("portfolio");
@@ -28,7 +31,19 @@ function App() {
           <About mail={mail} />
           <Contact mail={mail}/>
         </Route>
+
+        <Route path="/test">
+          <Test />
+        </Route>
         
+        <Route path="/test2">
+          <Test2 />
+        </Route>
+        
+        <Route path="/test3">
+          <Test3 />
+        </Route>
+
         <Route exact path="/">
           <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
           <Homepage setSelectedHeaderCateg={() => setSelectedHeaderCateg(selectedHeaderCateg => "none")} />

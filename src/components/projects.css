@@ -5,9 +5,18 @@
     justify-content: stretch;
 }
 
+.inside-frame {
+    position: absolute;
+    top: 94px; left: 50%; 
+    transform: translate(-50%, 0);
+    width: 153.82px;
+    height: 153.82px;
+    border: solid 2px black;
+}
+
 .projprev {
     position: relative;
-    height: 15em;
+    /* height: 15em; */
 }
 
 .projprev-hover {
@@ -59,6 +68,6 @@
     }
     .projprev {
         position: relative;
-        height: 7em;
+        /* height: 7em; */
     }
 }
