@@ -12,7 +12,7 @@
     /* background: var(--grey); */
 }
 
-.gallery > *:not(.lighthouse) {
+.gallery > *:not(.lightbox) {
     width: 100%;
     height: 100%;
     /* width: 20em;
@@ -24,7 +24,7 @@
     object-fit: cover;
 }
 
-.gallery>*:not(.lighthouse):hover {
+.gallery>*:not(.lightbox):hover {
     /* width: calc(1.05 * 20em);
     height: calc(1.05 * 13em);
     top: calc(-0.025 * 20em);     */
