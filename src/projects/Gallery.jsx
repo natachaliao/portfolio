@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './gallery.css';
-import { Lighthouse } from './Lighthouse';
+import { Lightbox } from './Lightbox';
 
 const Gallery = (props) => {
   const { pictures } = props;
@@ -69,7 +69,7 @@ const Gallery = (props) => {
         return displayItem(i, media, picture.file, `galleryitem-${i}`, "", "");
       })}
 
-      {selected !== -1 && <Lighthouse 
+      {selected !== -1 && <Lightbox 
         pictures={pictures} 
         current={selected} 
         setCurrent={(current) => setSelected(selected => current)} 

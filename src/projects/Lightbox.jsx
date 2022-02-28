@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import './lighthouse.css';
+import './lightbox.css';
 import arrow from './../assets/utils/arrow.png';
 import close from './../assets/utils/close.png';
 
-const Lighthouse = (props) => {
+const Lightbox = (props) => {
   const { current, pictures, setCurrent, displayItem } = props;
 
   useEffect(() => document.body.style.overflow = "hidden", []);
@@ -19,8 +19,8 @@ const Lighthouse = (props) => {
     setCurrent(index);
   }
 
-  const closeLightHouse = () => {
-    document.querySelector(".lighthouse").style.animationPlayState = "running";
+  const closeLightbox = () => {
+    document.querySelector(".lightbox").style.animationPlayState = "running";
     setTimeout(() => {
       setCurrent(-1);
       document.body.style.overflow = "initial";
@@ -28,8 +28,8 @@ const Lighthouse = (props) => {
   }
 
   return (
-    <div className="lighthouse">
-      <img className="close" alt="close" src={close} onClick={closeLightHouse}></img>
+    <div className="lightbox">
+      <img className="close" alt="close" src={close} onClick={closeLightbox}></img>
       <img className="left-arrow" alt="previous" src={arrow} onClick={() => onArrowClick("previous", current, pictures)}></img>
       <img className="right-arrow" alt="next" src={arrow} onClick={() => onArrowClick("next", current, pictures)}></img>
       <div className="currentPicture">
@@ -46,4 +46,4 @@ const Lighthouse = (props) => {
   )
 }
 
-export { Lighthouse };
+export { Lightbox };
