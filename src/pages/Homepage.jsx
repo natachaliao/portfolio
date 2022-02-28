@@ -1,7 +1,7 @@
-import { Categories } from './Categories.jsx';
-import { Projects } from './Projects.jsx';
-import categories from './categories.json';
-import projects from './projects.json';
+import { Categories } from './../components/Categories.jsx';
+import { Projects } from './../components/Projects.jsx';
+import categories from './../data/categories.json';
+import projects from './../data/projects.json';
 import './homepage.css';
 import { useState } from 'react';
 

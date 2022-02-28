@@ -1,12 +1,12 @@
 import './App.css';
 import { HashRouter as Router, Switch , Route } from 'react-router-dom';
 import { useState } from 'react';
-import { Homepage } from './homepage/Homepage';
-import Header from './all/Header';
-import { Contact } from './all/Contact';
-import { ProjectPage } from './projects/ProjectPage';
-import projects from './homepage/projects.json';
-import { About } from './about/About';
+import { Homepage } from './pages/Homepage';
+import Header from './components/Header';
+import { Contact } from './components/Contact';
+import { ProjectPage } from './pages/ProjectPage';
+import projects from './data/projects.json';
+import { About } from './pages/About';
 
 function App() {
   const [ selectedHeaderCateg, setSelectedHeaderCateg ] = useState("portfolio");

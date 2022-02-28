@@ -1,5 +1,5 @@
 import './projectpage.css';
-import { Gallery } from './Gallery';
+import { Gallery } from '../components/Gallery';
 
 const ProjectPage = (props) => {
   const { name, file, tools, description, pictures, date } = props.project;
