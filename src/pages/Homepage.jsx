@@ -5,6 +5,10 @@ import projects from './../data/projects.json';
 import './homepage.css';
 import { useEffect, useState } from 'react';
 import { ReactComponent as Shape1 } from './../assets/utils/shape1.svg';
+import { ReactComponent as Particle1 } from './../assets/utils/particle1.svg';
+import { ReactComponent as Particle2 } from './../assets/utils/particle2.svg';
+import { ReactComponent as Particle3 } from './../assets/utils/particle3.svg';
+import { ReactComponent as Particle4 } from './../assets/utils/particle4.svg';
 
 
 const Homepage = (props) => {
@@ -100,7 +104,18 @@ const Background = () => {
     <div className='bg'>
       <Shape1 style={{width: "300px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)'}}/>
       <Shape1 style={{width: "300px", bottom: 0, right: 0, transform: 'translate(50%, 50%)'}}/>
-
+      <Particle3 className="particle" style={{bottom: "23%", right: "23%"}} />
+      <Particle3 className="particle" style={{top: "18%", right: "25%"}} />
+      <Particle3 className="particle" style={{top: "14%", left: "34%"}} />
+      <Particle1 className="particle" style={{top: "21%", right: "6%"}} />
+      <Particle1 className="particle" style={{bottom: "3%", left: "51%"}} />
+      <Particle1 className="particle" style={{bottom: "21%", left: "21%"}} />
+      <Particle1 className="particle" style={{top: "7%", left: "45%"}} />
+      <Particle1 className="particle" style={{top: "18%", left: "7%"}} />
+      <Particle3 className="particle" style={{top: "71%", left: "8%"}} />
+      <Particle3 className="particle" style={{top: "23%", left: "17%"}} />
+      <Particle1 className="particle" style={{bottom: "3%", right: "19%"}} />
+      <Particle1 className="particle" style={{top: "14%", right: "32%"}} />
     </div>
   )
 }
