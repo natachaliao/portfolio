@@ -47,6 +47,10 @@ const Homepage = (props) => {
       return false;
     })
   }
+
+  useEffect(() => {
+    document.querySelector('body').classList.add("hide-overflow");
+  })
   
   return (
     <div id="homepage">
@@ -68,8 +72,7 @@ const ScrollIndication = () => {
 
   const setScrollIndication = () => {
     const scrollArea = document.querySelector("#projects");
-    console.log('scroll : ' + scrollArea.scrollWidth);
-    console.log('client : ' + scrollArea.clientWidth);
+    if(!scrollArea) return;
     if(scrollArea.scrollWidth > scrollArea.clientWidth) {
       setOpacity(1);
     }

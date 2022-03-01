@@ -43,7 +43,7 @@ const Categories = (props) => {
       <div id="p-categories">
         {categories.map((category) =>
           <button
-            className="p-category"
+            className="p-category button"
             id={`p-category-${category.id}`}
             key={`${category.id}-${category.name}`}
             onClick={() => setSelectedCateg(category.name)}

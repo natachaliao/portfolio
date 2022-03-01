@@ -7,6 +7,7 @@
         "file": "Formaxe/cover.png",
         "route": "formaxe",
         "contributors": [],
+        "link": "",
         "tools": ["Illustrator", "Photoshop", "After Effects", "Figma", "HTML/CSS"],
         "description": "J'ai réalisé un stage de 2 mois dans l'organisme de formation Formaxe où j'ai tenu le rôle de graphiste. Formaxe a lancé une plateforme Stafy destinée à ses formateurs et qui leur permet de réaliser des démarches administratives. Durant ce stage, j'ai réalisé des icônes pour le site de Formaxe, des visuels pour ses réseaux sociaux, des vidéos en motion design, la mise en page de livrets, le design de pages web ainsi que le codage d'une signature mail.<br/><br/>Voici le site de Formaxe <a href='https://formaxe.com' target='_blank'>ici</a> et celui de Stafy <a href='https://www.stafy.fr' target='_blank'>ici</a>.",
         "pictures": [
@@ -36,6 +37,7 @@
         "file": "Meishi/cover.PNG",
         "route": "meishi",
         "contributors": [],
+        "link": "",
         "tools": ["Figma"],
         "description": "J'ai réalisé en tant que projet personnel la maquette d'un site de restauration chinoise appelé Meishi. J'ai créé 5 pages : accueil, menu, avis, commande, réservation.",
         "pictures": [
@@ -65,6 +67,7 @@
         "file": "Portfolio/cover.png",
         "route": "ceportfolio",
         "contributors": [],
+        "link": "",
         "tools": ["React", "HTML/CSS"],
         "description": "J'ai entièrement codé ce site, abritant mon portfolio, avec React.",
         "pictures": []
@@ -77,6 +80,7 @@
         "file": "BabelioKids/homepage.png",
         "route": "babeliokids",
         "contributors": [],
+        "link": "",
         "tools": ["Figma"],
         "description": "Dans le cadre du cours de web design, j’ai réalisé le redesign du site de recommandations de lectures Babelio et l’ai orienté vers les enfants. Mon objectif était de rendre le site plus compréhensible et attrayant pour ce public. Pour cet exercice, j'ai réalisé un benchmark, un moodboard, des personnas, le zoning, le wireframe et des maquettes réalisées sur Figma.",
         "pictures": [
@@ -97,6 +101,7 @@
         "file": "Projet89/cover.png",
         "route": "projet89",
         "contributors": ["Emma VODABLE", "Erwann LEFEVRE", "Esther GARTNER"],
+        "link": "https://projet89.compagniesanslanommer.com/#",
         "tools": ["React", "HTML/CSS", "Figma", "Photoshop", "Illustrator", "iPad & Apple Pencil"],
         "description": "Dans le cadre d’un projet tutoré, j’ai réalisé en équipe de 4 un site web full-stack en collaboration avec une compagnie de théâtre nommée la Compagnie Sans La Nommer. Le site présente les souvenirs de 1989 collectés par la compagnie et utilise les technologies suivantes : React, node.js, express.js, d3. J’ai travaillé sur le design du site, l’expérience utilisateur en utilisant Figma, le front-end en utilisant React ainsi que les icônes en utilisant Illustrator.<br/><br/>Voir le site <a target='_blank' href='https://projet89.compagniesanslanommer.com/#'>ici</a>.",
         "pictures": [
@@ -135,6 +140,7 @@
         "file": "CovidVaccine/graph.png",
         "route": "covidvaccine",
         "contributors": ["Léa LAFFITTE", "Kéziah VALORIS"],
+        "link": "https://natachaliao32.github.io/CovidVaccine/",
         "tools": ["Three.js", "HTML/CSS/JS"],
         "description": "Il s'agit d'un projet de data design mené en équipe de 3. Notre problématique était d'observer l'impact des fakenews sur le taux de vaccination par pays. Je me suis occupée de coder notre preuve de concept en ligne et notamment de réaliser le globe terrestre avec la bibliothèque three.js.<br/><br/>Voir le site <a href='https://natachaliao32.github.io/CovidVaccine/' target='_blank'>ici</a>.",
         "pictures": [
@@ -161,6 +167,7 @@
         "file": "TheBeastInTheVillage/cover.png",
         "route": "thebeastinthevillage",
         "contributors": ["Judicaëlle SIX"],
+        "link": "https://www.youtube.com/embed/TAq-ozovev0",
         "tools": ["After Effects", "Illustrator"],
         "description": "The Beast In The Village est une séquence titre en motion design réalisée à deux pour un projet scolaire et inspiré du jeu Animal Crossing que nous avons réimaginé à la sauce policière. Nous avons réalisé presque la totalité des ressources graphiques de la vidéo sur Illustrator. J’ai réalisé la seconde partie de cette dernière à partir de 1:04.<br/><br/>« Henrietta vient d’emménager sur une île d’apparence paradisiaque mais à peine arrivée, un meurtre vient bouleverser le quotidien paisible des habitants. Accusée du crime, Henrietta parviendra-t-elle à prouver son innocence ? »<br/><br/>Crédits : Effets sonores obtenus de Zapslat et Avnish Parker / Images de fond et textures obtenues de Freepik, Vecteezy et Skylum",
         "pictures": [
@@ -178,6 +185,7 @@
         "file": "Thealia/poster1.png",
         "route": "thealia",
         "contributors": ["Kéziah VALORIS", "Grégoire PETITALOT", "Léa LAFFITTE", "Judicaêlle SIX"],
+        "link": "",
         "tools": ["Premiere Pro", "After Effects", "iPad & Apple Pencil", "Blender"],
         "description": "Théalia est un court-métrage réalisé en groupe de 5. Ingénieure son et graphiste sur ce projet, j’ai notamment réalisé deux affiches animées pour le court-métrage.<br/><br/>\"Dans un monde où les IA sont devenus indispensables au quotidien, Théalia, l’IA de notre protagoniste Koios, cesse un jour de fonctionner. Perdu, Koios devra apprendre à se débrouiller par lui-même.\"",
         "pictures": [
@@ -199,6 +207,7 @@
         "file": "Illustrations/WishingYouGoodNight.png",
         "route": "illustrations",
         "contributors": [],
+        "link": "",
         "tools": ["iPad & Apple Pencil"],
         "description": "J'aime dessiner à mes heures perdues. Voici certaines de mes réalisations.",
         "pictures": [
@@ -236,6 +245,7 @@
         "file": "GoldenTale/cover.png",
         "route": "goldentale",
         "contributors": ["Kéziah VALORIS"],
+        "link": "",
         "tools": ["Photoshop", "InDesign", "MagicaVoxel"],
         "description": "Golden Tale est un parc d’attractions fictif sur le thème des contes de fée. J’ai réalisé l’affiche, la carte et en partie le document de charte graphique. La carte a été réalisée avec MagicaVoxel. Découvrez le monde onirique de Golden Tale !",
         "pictures": [
@@ -256,6 +266,7 @@
         "file": "Epifree/cover.jpg",
         "route": "epifree",
         "contributors": ["Kéziah VALORIS"],
+        "link": "",
         "tools": ["After Effects", "Illustrator", "iPad & Apple Pencil"],
         "description": "Epifree est une épicerie solidaire étudiante au sein de laquelle je suis chargée de communication. Elle a pour double objectif de limiter le gaspillage alimentaire et de venir en aide aux étudiants en difficulté financière en leur distribuant des produits de première nécessité comme des aliments ou des produits d’hygiène.<br/><br/>J’ai réalisé la deuxième moitié d'une vidéo de présentation en motion design à partir de 00:24 ainsi que des visuels pour les réseaux sociaux et des affiches.<br/><br/>Voir la page facebook <a target='_blank' href='https://www.facebook.com/Epifree-UGE-109464603780131'>ici</a>.",
         "pictures": [
@@ -303,6 +314,7 @@
         "file": "MagasinRPG/cover.png",
         "route": "magasinrpg",
         "contributors": ["Kéziah VALORIS", "Amélie CROUIGNEAU", "Achraf LEMGHARI"],
+        "link": "",
         "tools": ["PHP", "HTML/CSS/JS"],
         "description": "Magasin RPG est un site web réalisé en équipe de 4. Il s’agit d’un projet de back-end utilisant php et MySql.",
         "pictures": [

@@ -1,13 +1,16 @@
 #header {
+    z-index: 99;
     width: 100vw;
     position: fixed;
-    padding: 2em;
+    top: 0;
+    padding: 2em 5em;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     gap: 2em;
     align-items: center;
+    background-color: var(--white);
 }
 
 #h-title {
@@ -58,10 +61,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* #header {
-        text-align: center;
-        padding: .5em;
-    } */
+    #header {
+        padding: 2em 2em;
+    }
     #h-title {
         font-size: 24px;
     }

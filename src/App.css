@@ -9,7 +9,7 @@
 body {
   font-family: Poppins, 'Courier New', Courier, monospace;
   margin: 0;
-  overflow: hidden;
+  font-size: 14px;
 }
 
 h1, h2, h3 {
@@ -22,11 +22,29 @@ h1, h2, h3 {
   --accent: #F26161;
 }
 
+.button {
+  transition: background .3s ease, color .3s linear;
+  font: inherit;
+  background: var(--white);
+  border: solid 2px var(--black);
+  padding: .5em 1em;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.button:hover {
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
 .bg {
-  position: absolute;
+  position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  overflow: hidden;
   z-index: -1;
 }
 

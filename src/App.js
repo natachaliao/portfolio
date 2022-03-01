@@ -22,7 +22,6 @@ function App() {
           <Route path={`/${project.route}`} key={`project-${project.order}`}>
             <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
             <ProjectPage project={project} />
-            <Contact mail={mail}/>
           </Route>
         )}
 
