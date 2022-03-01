@@ -3,10 +3,11 @@
 }
 
 .gallery {
+    /* position: fixed; */
     display: grid;
     grid-template-columns: repeat(var(--colGallery), 1fr);
     gap: 1em;
-    margin: 5em 8em;
+    margin: 2em 0;
     justify-items: center;
     grid-auto-rows: 13em;
     /* background: var(--grey); */

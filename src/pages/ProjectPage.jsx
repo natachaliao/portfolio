@@ -7,7 +7,7 @@ import { ReactComponent as Particle3 } from './../assets/utils/particle3.svg';
 import { ReactComponent as Particle4 } from './../assets/utils/particle4.svg';
 import { ReactComponent as Arrow } from './../assets/utils/arrow.svg';
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const ProjectPage = (props) => {
   const { name, file, tools, description, pictures, date, link } = props.project;
@@ -16,6 +16,8 @@ const ProjectPage = (props) => {
   useEffect(() => {
     document.querySelector('body').classList.remove("hide-overflow");
   })
+
+  // const [showGallery, setShowGallery] = useState(false);
 
   return (
     <div className="projectpage">
@@ -48,13 +50,15 @@ const ProjectPage = (props) => {
 
         <div className='projectpage-buttons'>
           {link && <a className="button" href={link} target='_blank'>Voir le projet</a>}
-          <button className="button">Voir la gallerie</button>
+          {/* {pictures.length !== 0 && <button className="button" onClick={() => setShowGallery(true)}>Voir la galerie</button>} */}
         </div>
+
+        <Gallery pictures={pictures} />
 
       </div>
 
 
-      {/* <Gallery pictures={pictures} /> */}
+      {/* {showGallery && <Gallery pictures={pictures} />} */}
 
       <Link to="/"><Arrow className="projectpage-back" /></Link>
       <Background />
@@ -66,8 +70,17 @@ const ProjectPage = (props) => {
 const Background = () => {
   return (
     <div className='bg'>
-      <Shape1 className="disappear-small" style={{ width: "300px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)' }} />
-      <Shape1 className="disappear-small" style={{ width: "300px", bottom: 0, right: 0, transform: 'translate(50%, 50%)' }} />
+      <Shape1 className="disappear-small fixed" style={{ width: "300px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)' }} />
+      <Shape1 className="disappear-small fixed" style={{ width: "300px", bottom: 0, right: 0, transform: 'translate(50%, 50%)' }} />
+      <Particle3 className="particle disappear-small" style={{top: "45%", left: "8%"}} />
+      <Particle3 className="particle disappear-small" style={{top: "46%", left: "91%"}} />
+      <Particle3 className="particle disappear-small" style={{top: "15%", left: "3%"}} />
+      <Particle1 className="particle disappear-small" style={{top: "14%", left: "95%"}} />
+      <Particle1 className="particle disappear-small" style={{top: "30%", left: "14%"}} />
+      <Particle1 className="particle disappear-small" style={{top: "68%", left: "6%"}} />
+      <Particle1 className="particle disappear-small" style={{top: "27%", left: "81%"}} />
+      <Particle1 className="particle disappear-small" style={{top: "69%", left: "85%"}} />
+
     </div>
   );
 }

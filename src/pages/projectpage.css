@@ -80,8 +80,8 @@
 
 .projectpage {
     display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    flex-direction: column;
+    align-items: center;
 }
 
 .projectpage-wp {
@@ -119,11 +119,14 @@
 }
 
 .projectpage-buttons {
-    margin-top: 4em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 4em;
+}
+
+.projectpage-buttons > * {
+    margin-top: 2em;
 }
 
 .projectpage-back {
@@ -143,6 +146,10 @@
     .projectpage-back {
         left: 2em;
         top: 6em;
+    }
+    .projectpage-wp {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .disappear-small {
