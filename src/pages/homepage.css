@@ -1,13 +1,15 @@
 #homepage {
-    /* margin: 2em 5em 5em; */
     display: flex;
     width: 100vw;
     height: 100vh;
+    /* min-height: 1000px; */
     align-items: center;
     overflow: hidden;
     flex-direction: column;
     justify-content: center;
 }
+
+
 /* 
 @media only screen and (max-width: 768px) {
     #homepage {
@@ -16,16 +18,16 @@
 } */
 
 .scroll-indication {
-    background-color: var(--white);
-    width: 5em;
-    height: 5em;
+    /* width: 5em;
+    height: 5em; */
     text-align: center;
-    border: solid 2px var(--black);
     position: absolute;
     top: 10%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: .5em;
 }
 .scroll-indication svg {
     height: 2em;

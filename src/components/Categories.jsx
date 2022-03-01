@@ -17,8 +17,8 @@ const Categories = (props) => {
 
   const getIdFromName = (name, array) => {
     let i = 0;
-    while(i < array.length) {
-      if(array[i].name === name) {
+    while (i < array.length) {
+      if (array[i].name === name) {
         return array[i].id;
       }
       i++;
@@ -33,17 +33,19 @@ const Categories = (props) => {
   })
 
   return (
-    <div id="p-categories">
-      {categories.map((category) =>
-        <span 
-          className="p-category"
-          id={`p-category-${category.id}`} 
-          key={`${category.id}-${category.name}`}
-          onClick={() => setSelectedCateg(category.name)}
-        >
-          {category.name}
-        </span>
-      )}
+    <div className="p-categories-wrapper">
+      <div id="p-categories">
+        {categories.map((category) =>
+          <span
+            className="p-category"
+            id={`p-category-${category.id}`}
+            key={`${category.id}-${category.name}`}
+            onClick={() => setSelectedCateg(category.name)}
+          >
+            {category.name}
+          </span>
+        )}
+      </div>
     </div>
   )
 }
