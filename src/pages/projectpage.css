@@ -127,7 +127,8 @@
 }
 
 .projectpage-back {
-    position: absolute;
+    position: fixed;
+    z-index: 99;
     left: 5em;
     width: 3em;
     top: 10em;
