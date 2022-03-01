@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './projects.css';
-import { ReactComponent as Frame1 } from './../assets/utils/frame3.svg';
+import { ReactComponent as Frame1 } from './../assets/utils/frame2.svg';
 
 const Projects = (props) => {
   const { projects, setSelectedHeaderCateg } = props;
 
   return (
     <div id="projects">
-      {projects.map((project) =>
-        <Project key={`${project.order}-${project.name}`} project={project} setSelectedHeaderCateg={setSelectedHeaderCateg} />
-      )}
+        {projects.map((project) =>
+          <Project key={`${project.order}-${project.name}`} project={project} setSelectedHeaderCateg={setSelectedHeaderCateg} />
+        )}
     </div>
   )
 }
@@ -45,6 +45,18 @@ const Project = (props) => {
     framedPicture.setAttribute('fill', 'url(#' + id + ')');
   }
 
+  const scrollHorizontally = () => {
+    const scrollContainer = document.querySelector("#homepage");
+    scrollContainer.addEventListener("wheel", (evt) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY * 0.05;
+    });
+  }
+
+  useEffect(() => {
+    scrollHorizontally();
+  }, [])
+
   useEffect(() => {
     animateProject();
     const svg = document.querySelector(`#frame-${idName}`)
@@ -68,7 +80,7 @@ const Project = (props) => {
 }
 
 const ProjectHover = (props) => {
-  
+
   const { idName, name, categories } = props;
 
   const [ left, setLeft ] = useState(0);
@@ -79,20 +91,41 @@ const ProjectHover = (props) => {
 
   const placeProjectHover = (id) => {
     const placeholder = document.querySelector(`#${id} .placeholder`);
+    // const parent = document.querySelector(`.scroll-horizontal`);
+
     if(!placeholder) return
     const rect = placeholder.getBoundingClientRect();
     const { left, top, width, height } = rect;
-    const transform = `translateY(${window.scrollY}px)`;
-    setTransform(transform);
+    // const transform = `translateY(${window.scrollY}px)`;
+
+    // const pRect = parent.getBoundingClientRect();
+    // const { left: pLeft, top: pTop } = pRect;
+    // console.log(parent);
+    console.log(placeholder);
+    console.log("placeholder: " + left + " / " + top);
+    // console.log("parent: " + pLeft + " / " + pTop);
+
+
+    // const { left, top } = getCoords(placeholder);
+    // setTransform(transform);
     setWidth(width);
     setHeight(height);
-    setTop(top);
-    setLeft(left);
-  } 
+    setTop(top + window.scrollY);
+    setLeft(left + window.scrollX);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', () => placeProjectHover(`projprev-${idName}`));
+    const scrollContainer = document.querySelector("#homepage");
+    scrollContainer.addEventListener("wheel", () => {
+      setTimeout(function(){
+        placeProjectHover(`projprev-${idName}`)
+      },1);
+    });
+  }, [])
 
   useEffect(() => {
     placeProjectHover(`projprev-${idName}`);
-    window.addEventListener('resize', () => placeProjectHover(`projprev-${idName}`))
   })
 
   return (

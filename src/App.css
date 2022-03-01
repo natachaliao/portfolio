@@ -8,6 +8,8 @@
 
 body {
   font-family: Poppins, 'Courier New', Courier, monospace;
+  margin: 0;
+  overflow: hidden;
 }
 
 h1 {
@@ -20,6 +22,21 @@ h1 {
   --accent: #05d584;
 }
 
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bg * {
+  position: absolute;
+}
+
+.disable-hover {
+  pointer-events: none;
+}
 
 /* width */
 ::-webkit-scrollbar {

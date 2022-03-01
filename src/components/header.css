@@ -1,10 +1,17 @@
 #header {
     text-align: center;
     padding: 2em;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 #h-title {
-    font-size: 64px;
+    font-size: 36px;
     margin: 0;
     margin-bottom: 20px;
     cursor: pointer;

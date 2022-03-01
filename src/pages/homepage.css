@@ -1,9 +1,24 @@
 #homepage {
-    margin: 2em 5em 5em;
+    /* margin: 2em 5em 5em; */
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
 }
-
+/* 
 @media only screen and (max-width: 768px) {
     #homepage {
         margin: 1em 1em 3em;
     }
+} */
+
+.scroll-indication {
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    border: solid 2px red;
 }

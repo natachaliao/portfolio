@@ -32,22 +32,10 @@ function App() {
           <Contact mail={mail}/>
         </Route>
 
-        <Route path="/test">
-          <Test />
-        </Route>
-        
-        <Route path="/test2">
-          <Test2 />
-        </Route>
-        
-        <Route path="/test3">
-          <Test3 />
-        </Route>
-
         <Route exact path="/">
           <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
           <Homepage setSelectedHeaderCateg={() => setSelectedHeaderCateg(selectedHeaderCateg => "none")} />
-          <Contact mail={mail}/>
+          {/* <Contact mail={mail}/> */}
         </Route>
 
       </Switch>

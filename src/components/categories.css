@@ -1,7 +1,14 @@
 #p-categories {
     display: flex;
-    justify-content:space-evenly;
-    margin: 2em 0;
+    /* justify-content:space-evenly; */
+    justify-content: center;
+    gap: 20px;
+    /* margin: 2em auto; */
+    position: fixed;
+    width: 80%;
+    bottom: 4em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .p-category {
@@ -14,7 +21,7 @@
 
 .p-category:hover {
     background: var(--basic);
-    color: rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
