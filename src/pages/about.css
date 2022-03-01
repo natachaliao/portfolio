@@ -1,13 +1,26 @@
-.portrait {
+/* .portrait {
+    height: 40vh;
+} */
+
+#frame-portrait {
     height: 40vh;
 }
 
 .about {
-    margin: 2em auto 5em;
-    width: 60vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-wp {
+    /* margin: 2em auto 5em; */
+    width: 600px;
     display: grid;
     grid-template-columns: auto auto;
-    gap: 2em;
+    gap: 8em;
     align-items: center;
     text-align: justify;
 }
@@ -36,8 +49,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .about {
-        margin: 1em auto 3em;
+    .about-wp {
+        width: 100%;
+        padding: 2em;
+        box-sizing: border-box;
         grid-template-columns: auto;
         gap: .5em;
         justify-items: center;

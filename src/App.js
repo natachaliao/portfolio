@@ -28,7 +28,6 @@ function App() {
         <Route path="/apropos">
           <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
           <About mail={mail} />
-          <Contact mail={mail}/>
         </Route>
 
         <Route path="/test3">

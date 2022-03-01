@@ -15,7 +15,7 @@ const ProjectPage = (props) => {
 
   useEffect(() => {
     document.querySelector('body').classList.remove("hide-overflow");
-  })
+  }, [])
 
   // const [showGallery, setShowGallery] = useState(false);
 
