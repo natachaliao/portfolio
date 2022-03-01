@@ -11,7 +11,7 @@ const Test3 = () => {
     }
 
     useEffect(() => {
-        changePattern()
+        // changePattern()
     })
     
     return (
@@ -42,13 +42,16 @@ const Test3 = () => {
                                 width="100%"
                                 height="100%"
                             >
-                                <image
+                                {/* <image
                                     href="https://api.time.com/wp-content/uploads/2018/05/forest-bathing.jpg?quality=85&w=1200&h=628&crop=1"
                                     height={600}
                                     width={1200}
                                     x={0}
                                     y={0}
-                                />
+                                /> */}
+                                <div style={{background: "red", width:"20px", height: "20px"}}>
+
+                                </div>
                             </pattern>
                         </defs>
                         <path

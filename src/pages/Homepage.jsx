@@ -51,7 +51,7 @@ const Homepage = (props) => {
         selectedCateg={selectedCateg}
         setSelectedCateg={category => setSelectedCateg(selectedCateg => category)} 
       />
-      <ScrollIndication />
+      {/* <ScrollIndication /> */}
       <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
       <Background />
     </div>
@@ -69,8 +69,8 @@ const ScrollIndication = () => {
 const Background = () => {
   return (
     <div className='bg'>
-      <Shape1 style={{width: "550px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)'}}/>
-      <Shape1 style={{width: "550px", bottom: 0, right: 0, transform: 'translate(50%, 50%)'}}/>
+      <Shape1 style={{width: "300px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)'}}/>
+      <Shape1 style={{width: "300px", bottom: 0, right: 0, transform: 'translate(50%, 50%)'}}/>
 
     </div>
   )

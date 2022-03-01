@@ -50,11 +50,13 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     top: 0;
     transition: opacity .3s ease;
     overflow: hidden;
+    padding: 2em;
+    box-sizing: border-box;
 }
 
 .projprev-hover:hover {

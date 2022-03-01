@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './projects.css';
-import { ReactComponent as Frame1 } from './../assets/utils/frame2.svg';
+import { ReactComponent as Frame1 } from './../assets/utils/frame5.svg';
 
 const Projects = (props) => {
   const { projects, setSelectedHeaderCateg } = props;
@@ -53,6 +53,10 @@ const Project = (props) => {
     });
   }
 
+  const chooseFrame = () => {
+    
+  }
+
   useEffect(() => {
     scrollHorizontally();
   }, [])
@@ -87,31 +91,45 @@ const ProjectHover = (props) => {
   const [ top, setTop ] = useState(0);
   const [ width, setWidth ] = useState(0);
   const [ height, setHeight ] = useState(0);
-  const [ transform, setTransform ] = useState('');
 
   const placeProjectHover = (id) => {
     const placeholder = document.querySelector(`#${id} .placeholder`);
-    // const parent = document.querySelector(`.scroll-horizontal`);
 
-    if(!placeholder) return
+    if(!placeholder) return;
     const rect = placeholder.getBoundingClientRect();
     const { left, top, width, height } = rect;
-    // const transform = `translateY(${window.scrollY}px)`;
 
-    // const pRect = parent.getBoundingClientRect();
-    // const { left: pLeft, top: pTop } = pRect;
-    // console.log(parent);
     console.log(placeholder);
     console.log("placeholder: " + left + " / " + top);
-    // console.log("parent: " + pLeft + " / " + pTop);
 
-
-    // const { left, top } = getCoords(placeholder);
-    // setTransform(transform);
     setWidth(width);
     setHeight(height);
     setTop(top + window.scrollY);
     setLeft(left + window.scrollX);
+
+    if(placeholder.tagName === "ellipse") {
+      const elmnt = document.querySelector(`#${id} .projprev-hover`);
+      elmnt.style.clipPath = "ellipse()";
+    }
+  }
+
+  const clipPath = (id) => {
+    const placeholder = document.querySelector(`#${id} .placeholder`);
+    if(!placeholder) return;
+    const cx = placeholder.cx.baseVal.value;
+    const cy = placeholder.cy.baseVal.value;
+    const rx = placeholder.rx.baseVal.value;
+    const ry = placeholder.ry.baseVal.value;
+    const tag = placeholder.tagName;
+    console.log('x = ', cx, " y = ", cy, " rx = ", rx, " ry = ", ry, " tag : ", tag);
+    
+    if(tag === "ellipse") {
+      // const clip = `${tag}(${rx}px ${ry}px at ${cx}px ${cy}px)`; 
+      // console.log(clip);
+      const elmnt = document.querySelector(`#${id} .projprev-hover`);
+      // console.log(elmnt);
+      elmnt.style.clipPath = "ellipse()";
+    }
   }
 
   useEffect(() => {
@@ -129,7 +147,7 @@ const ProjectHover = (props) => {
   })
 
   return (
-    <div className="projprev-hover" style={{width: width, height: height, top: top, left: left, transform: transform}}>
+    <div className="projprev-hover" style={{width: width, height: height, top: top, left: left}}>
       <h3 className="projprev-title">{name}</h3>
       <div className="projprev-categories">
         {categories.map((category, index) => <span key={`projprev-category-${index}`}>{category}</span>)}
