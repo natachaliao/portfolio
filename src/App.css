@@ -12,14 +12,14 @@ body {
   overflow: hidden;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: Bolandes, 'Courier New', Courier, monospace;
 }
 
 :root {
-  --basic: rgb(34, 34, 34);
-  --grey: rgb(233, 233, 233);
-  --accent: #05d584;
+  --black: rgb(34, 34, 34);
+  --white: rgb(233, 233, 233);
+  --accent: #F26161;
 }
 
 .bg {

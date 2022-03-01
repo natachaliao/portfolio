@@ -43,14 +43,14 @@
 .projprev-hover {
     /* width: 100%;
     height: 100%; */
-    background: red;
-    color:  var(--basic);
+    background: var(--black);
+    color:  var(--white);
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     top: 0;
     transition: opacity .3s ease;
@@ -80,6 +80,7 @@
 .projprev-categories {
     display: flex;
     flex-direction: column;
+    font-size: 14px;
 }
 
 /* @media only screen and (max-width: 768px) {

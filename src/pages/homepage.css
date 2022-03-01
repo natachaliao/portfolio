@@ -16,9 +16,20 @@
 } */
 
 .scroll-indication {
-    background-color: white;
+    background-color: var(--white);
     width: 5em;
     height: 5em;
     text-align: center;
-    border: solid 2px red;
+    border: solid 2px var(--black);
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.scroll-indication svg {
+    height: 2em;
+}
+.scroll-text {
+    margin: 0;
 }

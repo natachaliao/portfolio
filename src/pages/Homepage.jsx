@@ -51,7 +51,7 @@ const Homepage = (props) => {
         selectedCateg={selectedCateg}
         setSelectedCateg={category => setSelectedCateg(selectedCateg => category)} 
       />
-      {/* <ScrollIndication /> */}
+      <ScrollIndication />
       <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
       <Background />
     </div>
@@ -61,7 +61,12 @@ const Homepage = (props) => {
 const ScrollIndication = () => {
   return (
     <div className='scroll-indication'>
-      <h2>Scroll</h2>
+      <h2 className='scroll-text'>Scroll</h2>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 55.7 32.16">
+        <polygon points="0 16.08 27.85 32.16 27.85 0 0 16.08" style={{fill:"#f26161"}}/>
+        <polygon points="28.35 0.87 54.7 16.08 28.35 31.29 28.35 0.87" style={{fill:"#fff"}}/>
+        <path d="M28.85,1.73,53.7,16.08,28.85,30.43V1.73M27.85,0V32.16L55.7,16.08,27.85,0Z"/>
+      </svg>
     </div>
   );
 }

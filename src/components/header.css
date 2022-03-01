@@ -54,8 +54,8 @@
 
 @media only screen and (max-width: 768px) {
     #header {
-        text-align: center;
-        padding: 1em;
+        /* text-align: center; */
+        padding: .5em;
     }
     
 }
