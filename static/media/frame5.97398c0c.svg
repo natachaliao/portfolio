@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.74 376.21">
+<defs>
+    <pattern
+        id="pattern"
+        patternUnits="userSpaceOnUse"
+        width="100%"
+        height="100%"
+    >
+        <image
+            x="0"
+            y="0"
+        />
+    </pattern>
+</defs>
+<g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M176.43,46.29c17-12.32-3.75-36.45-19.84-19.75,12.09-33.34-43.27-34.77-30.84,0C113,8.37,86,32.17,108.05,46.07,46.59,64,1,129.8,1,208.21c0,92.23,63.07,167,140.87,167s140.87-74.77,140.87-167C282.74,130.12,237.52,64.55,176.43,46.29ZM141.87,342.08c-62.37,0-112.93-59.93-112.93-133.87S79.5,74.34,141.87,74.34,254.8,134.28,254.8,208.21,204.24,342.08,141.87,342.08Z" style="fill:#fff;stroke:#000;stroke-miterlimit:10;stroke-width:2px"/><ellipse cx="141.87" cy="208.22" rx="128.83" ry="152.73" style="fill:none;stroke:#f26161;stroke-miterlimit:10;stroke-width:2px"/><path d="M122.54,56.84c-7.55-30.28,41.85-33.86,36.92,0C153.77,54.92,128,54.43,122.54,56.84Z" style="fill:#f26161"/><path d="M176.43,46.29c17-12.31-3.75-36.45-19.84-19.75,12.09-33.34-43.27-34.76-30.84,0C113,8.37,86,32.17,108.05,46.08,46.59,64,1,129.81,1,208.22c0,92.22,63.07,167,140.87,167s140.87-74.77,140.87-167C282.74,130.12,237.52,64.56,176.43,46.29Z" style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px"/>
+<ellipse class="placeholder" fill="url(#pattern)" cx="141.87" cy="208.22" rx="112.93" ry="133.87" style="stroke:#000;stroke-miterlimit:10;stroke-width:2px"/></g></g></svg>
