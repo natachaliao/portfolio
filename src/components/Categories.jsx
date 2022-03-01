@@ -33,20 +33,47 @@ const Categories = (props) => {
   })
 
   return (
-    <div className="p-categories-wrapper">
+    <div id="p-categories-wp">
+      {/* <button className='dropbtn'>Choose a category</button> */}
+      <CategoriesSelect 
+        categories={categories} 
+        selectedCateg={selectedCateg} 
+        setSelectedCateg={setSelectedCateg} 
+      />
       <div id="p-categories">
         {categories.map((category) =>
-          <span
+          <button
             className="p-category"
             id={`p-category-${category.id}`}
             key={`${category.id}-${category.name}`}
             onClick={() => setSelectedCateg(category.name)}
           >
             {category.name}
-          </span>
-        )}
+          </button>
+        )}        
       </div>
+
     </div>
+  )
+}
+
+const CategoriesSelect = (props) => {
+  const { categories, selectedCateg, setSelectedCateg } = props;
+  
+  return (
+    <select name="categories" id="categories-select"
+      onChange={e => setSelectedCateg(e.target.value)}>
+        <option value="">{selectedCateg}</option>
+        {categories.map((category) =>
+          <option
+            value={category.name}
+            id={`select-p-category-${category.id}`}
+            key={`select-${category.id}-${category.name}`}
+          >
+            {category.name}
+          </option>
+        )}  
+    </select>
   )
 }
 

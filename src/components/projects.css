@@ -5,83 +5,38 @@
     justify-content: stretch;
 } */
 
-#projects {
+/* #projects {
     display: flex;
     flex-direction: row;
-    /* overflow: auto; */
     gap: 0px;
     width: 100vw;
-    /* height: 60vh; */
-    /* touch-action: pan-y; */
-    /* padding: 50px; */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-}
+} */
 
-.frame {
-    width: auto;
-    height: 250px;
-}
 
-.inside-frame {
+
+/* .inside-frame {
     position: absolute;
     top: 94px; left: 50%; 
     transform: translate(-50%, 0);
     width: 153.82px;
     height: 153.82px;
     border: solid 2px black;
-}
+} */
 
-.projprev {
-    /* position: relative;
-    height: 15em; */
-    margin: 0 30px;
-}
-
-.projprev-hover {
-    /* width: 100%;
-    height: 100%; */
-    background: var(--black);
-    color:  var(--white);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: opacity .3s ease;
-    overflow: hidden;
-    padding: 2em;
-    box-sizing: border-box;
-}
-
-.projprev-hover:hover {
-    opacity: 1;
-}
-
-.projprev img {
+/* .projprev img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
-.projprev * {
+/* .projprev * {
     margin: 0;
 }
 
 .projprev-title {
     margin-bottom: 1em;
 }
-
-.projprev-categories {
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
-}
+ */
 
 /* @media only screen and (max-width: 768px) {
     #projects {
@@ -95,3 +50,53 @@
         height: 7em;
     }
 } */
+
+/* .frame {
+    width: auto;
+    height: 250px;
+} */
+
+/* .projprev {
+    margin: 0 30px;
+} */
+
+
+
+#projects {
+    /* height: 15em; */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding: 0 3em;
+}
+
+.frame {
+    height: 100%;
+}
+
+.projprev-hover {
+    background: var(--black);
+    color:  var(--white);
+    transition: opacity .3s ease;
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.projprev-categories {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.projprev-hover:hover {
+    opacity: 1;
+}

@@ -18,14 +18,14 @@ h1, h2, h3 {
 
 :root {
   --black: rgb(34, 34, 34);
-  --white: rgb(233, 233, 233);
+  --white: rgb(255, 255, 255);
   --accent: #F26161;
 }
 
 .bg {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
   overflow: hidden;
   z-index: -1;
 }
@@ -34,9 +34,6 @@ h1, h2, h3 {
   position: absolute;
 }
 
-.disable-hover {
-  pointer-events: none;
-}
 
 /* width */
 ::-webkit-scrollbar {

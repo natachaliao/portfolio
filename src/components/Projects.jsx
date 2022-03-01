@@ -53,8 +53,9 @@ const Project = (props) => {
   }
 
   const scrollHorizontally = () => {
-    const scrollContainer = document.querySelector("#homepage");
-    scrollContainer.addEventListener("wheel", (evt) => {
+    const scrollArea = document.querySelector("#homepage");
+    const scrollContainer = document.querySelector("#projects");
+    scrollArea.addEventListener("wheel", (evt) => {
       evt.preventDefault();
       scrollContainer.scrollLeft += evt.deltaY * 0.05;
     });

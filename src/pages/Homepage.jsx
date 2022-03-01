@@ -3,7 +3,7 @@ import { Projects } from './../components/Projects.jsx';
 import categories from './../data/categories.json';
 import projects from './../data/projects.json';
 import './homepage.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ReactComponent as Shape1 } from './../assets/utils/shape1.svg';
 
 
@@ -46,31 +46,50 @@ const Homepage = (props) => {
   
   return (
     <div id="homepage">
+      <ScrollIndication />
+      <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
       <Categories 
         categories={categories} 
         selectedCateg={selectedCateg}
         setSelectedCateg={category => setSelectedCateg(selectedCateg => category)} 
       />
-      <ScrollIndication />
-      <Projects projects={projectsOfSelectedCategories(selectedCateg, projects)} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
       <Background />
     </div>
   )
 }
 
 const ScrollIndication = () => {
+
+  const [opacity, setOpacity] = useState(0);
+
+  const setScrollIndication = () => {
+    const scrollArea = document.querySelector("#projects");
+    console.log('scroll : ' + scrollArea.scrollWidth);
+    console.log('client : ' + scrollArea.clientWidth);
+    if(scrollArea.scrollWidth > scrollArea.clientWidth) {
+      setOpacity(1);
+    }
+    else {
+      setOpacity(0);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', setScrollIndication);
+  }, [])
+
+  useEffect(() => {
+    setScrollIndication();
+  })
+
   return (
-    <div className='scroll-indication'>
+    <div className='scroll-indication' style={{opacity: opacity}}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.85 32.16">
         <polygon points="0 16.08 27.85 32.16 27.85 0 0 16.08" style={{fill:"#f26161"}}/>
       </svg>
       <h2 className='scroll-text'>Scroll</h2>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
         <polygon points="0 0, 0 100, 85 50" fill='white' stroke='black' strokeWidth='4'/>
-
-      {/* <polygon points="0 16.08 27.85 32.16 27.85 0 0 16.08" style={{fill:"#f26161", transform: "rotate(90deg)"}}/> */}
-        {/* <polygon points="28.35 0.87 54.7 16.08 28.35 31.29 28.35 0.87" style={{fill:"#fff"}}/>
-        <path d="M28.85,1.73,53.7,16.08,28.85,30.43V1.73M27.85,0V32.16L55.7,16.08,27.85,0Z"/> */}
       </svg>
     </div>
   );
