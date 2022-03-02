@@ -1,41 +1,16 @@
-/* .p-categories-wrapper {
-    position: absolute;
-    bottom: 0;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em;
-}
-
-#p-categories {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 1em;
-    text-align: center;
-} */
-
 #p-categories-wp {
-    /* align-self: center;
-    position: relative; */
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 #p-categories {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
     margin: 0 2em;
-    align-self: center;
-    /* height: fit-content; */
     /* justify-content: center;
-    align-content: center;
-    text-align: center; */
+    align-self: center; */
 } 
 
 #categories-select {
@@ -54,24 +29,10 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* #p-categories {
-        overflow:auto;
-        flex-wrap: wrap;
-        justify-content:center;
-        gap: .5em;
-    } */
     #categories-select {
         display: inline-block;
     }
     #p-categories {
         display: none;
     }
-
-    /* #p-categories{
-        position: absolute;
-        flex-direction: column;
-        gap: 0;
-        top: 0;
-        transform: translateY(-100%);
-    } */
 }

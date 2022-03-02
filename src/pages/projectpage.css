@@ -1,87 +1,8 @@
-/* .projectpage-cover {
-    position: relative;
-    width: 100%;
-    height: 80vh;
-}
-
-.projectpage-cover img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(.9);
-}
-
-.projectpage-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-    font-family: Oswald;
-    text-align: center;
-    margin: 0;
-    z-index: 1;
-    filter: drop-shadow(0 0 .5em rgba(0, 0, 0, 0.5));
-}
-
-.projectpage-info {
-    display: grid;
-    grid-template-columns: max-content max-content auto;
-    gap: 2em;
-    margin: 5em 8em;
-    list-style: none;
-}
-
-.info-area, .info-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.info-name {
-    color: var(--accent);
-    margin-bottom: .5em;
-}
-
-.projectpage a {
-    text-decoration: none;
-    color: var(--accent);
-    transition: color .3s ease;
-}
-
-.projectpage a:hover {
-    color: #009159;
-}
-
-@media only screen and (max-width: 768px) {
-    .projectpage-info {
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "date tools"
-        "desc desc";
-        gap: 1em;
-        margin: 1em;
-        text-align: justify;
-    }
-    #date {
-        grid-area: date;
-    }
-    #tools {
-        grid-area: tools;
-    }
-    .projectpage-desc {
-        grid-area: desc;
-    }
-    .projectpage-title {
-        font-size: 60px;
-    }
-    
-} */
-
 .projectpage {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
 
 .projectpage-wp {
@@ -92,14 +13,9 @@
     padding: 0 2em 2em 2em;
 }
 
-/* .projectpage > * {
-    width: 100%;
-} */
-
 .projectpage-title {
     text-align: center;
     font-size: 64px;
-    margin: 2.3em 0 .4em 0;
 }
 
 .projectpage-info {

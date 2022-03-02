@@ -77,14 +77,14 @@ const Project = (props) => {
   const chooseFrame = async () => {
     const frames = {
       horizontal: [
-        <Frame1 className='frame' id={`frame-${idName}`} />,
-        <Frame2 className='frame' id={`frame-${idName}`} />,
-        <Frame3 className='frame' id={`frame-${idName}`} />
+        <Frame1 className='frame frame-hr' id={`frame-${idName}`} />,
+        <Frame2 className='frame frame-hr' id={`frame-${idName}`} />,
+        <Frame3 className='frame frame-hr' id={`frame-${idName}`} />
       ],
       vertical: [
-        <Frame4 className='frame' id={`frame-${idName}`} />,
-        <Frame5 className='frame' id={`frame-${idName}`} />,
-        <Frame6 className='frame' id={`frame-${idName}`} />
+        <Frame4 className='frame frame-vr' id={`frame-${idName}`} />,
+        <Frame5 className='frame frame-vr' id={`frame-${idName}`} />,
+        <Frame6 className='frame frame-vr' id={`frame-${idName}`} />
       ]
     }
 
@@ -100,6 +100,17 @@ const Project = (props) => {
     setFrame(frame);
   }
 
+  const positionFrames = () => {
+    const scrollArea = document.querySelector("#projects");
+    if(!scrollArea) return;
+    if(scrollArea.scrollWidth > scrollArea.clientWidth) {
+      scrollArea.setAttribute('style', 'justify-content: flex-start');
+    }
+    else {
+      scrollArea.setAttribute('style', 'justify-content: center');
+    }
+  }
+
   useEffect(() => {
     scrollHorizontally();
     chooseFrame();
@@ -109,6 +120,7 @@ const Project = (props) => {
     animateProject();
     const svg = document.querySelector(`#frame-${idName}`)
     changePattern(svg, idName, path);
+    positionFrames();
   })
 
   return (
@@ -118,10 +130,8 @@ const Project = (props) => {
       to={`/${route}`}
       onClick={() => setSelectedHeaderCateg()}
     >
-
-      {/* <Frame1 className='frame' id={`frame-${idName}`} /> */}
-      {frame}
-      <ProjectHover idName={idName} name={name} categories={categories} />
+    {frame}
+    <ProjectHover idName={idName} name={name} categories={categories} />
 
     </Link>
   )
@@ -143,9 +153,6 @@ const ProjectHover = (props) => {
     const rect = placeholder.getBoundingClientRect();
     const { left, top, width, height } = rect;
 
-    // console.log(placeholder);
-    // console.log("placeholder: " + left + " / " + top);
-
     setWidth(width);
     setHeight(height);
     setTop(top + window.scrollY);
@@ -153,25 +160,6 @@ const ProjectHover = (props) => {
 
     if(placeholder.tagName === "ellipse") {
       const elmnt = document.querySelector(`#${id} .projprev-hover`);
-      elmnt.style.clipPath = "ellipse()";
-    }
-  }
-
-  const clipPath = (id) => {
-    const placeholder = document.querySelector(`#${id} .placeholder`);
-    if(!placeholder) return;
-    const cx = placeholder.cx.baseVal.value;
-    const cy = placeholder.cy.baseVal.value;
-    const rx = placeholder.rx.baseVal.value;
-    const ry = placeholder.ry.baseVal.value;
-    const tag = placeholder.tagName;
-    // console.log('x = ', cx, " y = ", cy, " rx = ", rx, " ry = ", ry, " tag : ", tag);
-    
-    if(tag === "ellipse") {
-      // const clip = `${tag}(${rx}px ${ry}px at ${cx}px ${cy}px)`; 
-      // console.log(clip);
-      const elmnt = document.querySelector(`#${id} .projprev-hover`);
-      // console.log(elmnt);
       elmnt.style.clipPath = "ellipse()";
     }
   }

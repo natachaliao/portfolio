@@ -1,8 +1,4 @@
-/* .portrait {
-    height: 40vh;
-} */
-
-#frame-portrait {
+/* #frame-portrait {
     height: 40vh;
 }
 
@@ -16,7 +12,6 @@
 }
 
 .about-wp {
-    /* margin: 2em auto 5em; */
     width: 600px;
     display: grid;
     grid-template-columns: auto auto;
@@ -56,5 +51,65 @@
         grid-template-columns: auto;
         gap: .5em;
         justify-items: center;
+    }
+} */
+
+.about-wp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    width: 650px;
+    max-height: 100%;
+}
+
+.portrait-wp {
+    height: 40vh;
+    min-height: 40vh;
+    align-self: center;
+}
+
+#frame-portrait {
+    height: 100%;
+}
+
+.about-mail {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    gap: .6em;
+    margin: 1em 0;
+}
+
+.about-mail img {
+    height: 1em;
+    filter: brightness(0);
+}
+
+.about-mail a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.about-mail a:hover {
+    color: var(--accent);
+}
+
+@media only screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        width: 100%;
+        gap: 1em;
+        padding: 0 2em;
+        box-sizing: border-box;
+    }
+    #bg3 {
+        opacity: 0;
     }
 }

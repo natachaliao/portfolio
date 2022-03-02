@@ -1,16 +1,15 @@
 #header {
+    /* position: fixed;
+    top: 0; */
     z-index: 90;
     width: 100vw;
-    position: fixed;
-    top: 0;
     padding: 2em 5em;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    gap: 2em;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--white);
+    gap: 2em;
 }
 
 #h-title {

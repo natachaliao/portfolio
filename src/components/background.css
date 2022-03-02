@@ -1,0 +1,15 @@
+.bg-wp, .bg, .bg * {
+    position: absolute;
+}
+
+.bg-wp {
+    top: 0; left: 0;
+}
+
+.bg {
+    
+    overflow: hidden;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    z-index: -1;
+}

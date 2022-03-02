@@ -1,15 +1,13 @@
 import './App.css';
 import { HashRouter as Router, Switch , Route } from 'react-router-dom';
 import { useState } from 'react';
+import projects from './data/projects.json';
 import { Homepage } from './pages/Homepage';
 import Header from './components/Header';
 import { Contact } from './components/Contact';
 import { ProjectPage } from './pages/ProjectPage';
-import projects from './data/projects.json';
 import { About } from './pages/About';
-import Test from './Test';
-import Test2 from './Test2';
-import Test3 from './Test3';
+import Background from './components/Background';
 
 function App() {
   const [ selectedHeaderCateg, setSelectedHeaderCateg ] = useState("portfolio");
@@ -20,24 +18,28 @@ function App() {
 
         {projects.map(project => 
           <Route path={`/${project.route}`} key={`project-${project.order}`}>
-            <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
-            <ProjectPage project={project} />
+            <div className='page'>
+              <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
+              <ProjectPage project={project} />
+              <Background n={2} />
+            </div>
           </Route>
         )}
 
         <Route path="/apropos">
-          <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
-          <About mail={mail} />
-        </Route>
-
-        <Route path="/test3">
-          <Test3 />
+          <div className='page'>
+            <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
+            <About mail={mail} />
+            <Background n={3} />
+          </div>
         </Route>
 
         <Route exact path="/">
-          <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
-          <Homepage setSelectedHeaderCateg={() => setSelectedHeaderCateg(selectedHeaderCateg => "none")} />
-          {/* <Contact mail={mail}/> */}
+          <div className='page'>
+            <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
+            <Homepage setSelectedHeaderCateg={() => setSelectedHeaderCateg(selectedHeaderCateg => "none")} />
+            <Background n={1} />
+          </div>
         </Route>
 
       </Switch>

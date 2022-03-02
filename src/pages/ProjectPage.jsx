@@ -13,11 +13,11 @@ const ProjectPage = (props) => {
   const { name, file, tools, description, pictures, date, link } = props.project;
   const path = require("../assets/" + file).default;
 
-  useEffect(() => {
-    document.querySelector('body').classList.remove("hide-overflow");
-  }, [])
-
   // const [showGallery, setShowGallery] = useState(false);
+
+  useEffect(() => {
+    document.querySelector('body').classList.remove('hide-overflow');
+  }, []);
 
   return (
     <div className="projectpage">
@@ -61,28 +61,11 @@ const ProjectPage = (props) => {
       {/* {showGallery && <Gallery pictures={pictures} />} */}
 
       <Link to="/"><Arrow className="projectpage-back" /></Link>
-      <Background />
 
     </div>
   )
 }
 
-const Background = () => {
-  return (
-    <div className='bg'>
-      <Shape1 className="disappear-small fixed" style={{ width: "300px", bottom: 0, left: 0, transform: 'translate(-50%, 50%)' }} />
-      <Shape1 className="disappear-small fixed" style={{ width: "300px", bottom: 0, right: 0, transform: 'translate(50%, 50%)' }} />
-      <Particle3 className="particle disappear-small" style={{top: "45%", left: "8%"}} />
-      <Particle3 className="particle disappear-small" style={{top: "46%", left: "91%"}} />
-      <Particle3 className="particle disappear-small" style={{top: "15%", left: "3%"}} />
-      <Particle1 className="particle disappear-small" style={{top: "14%", left: "95%"}} />
-      <Particle1 className="particle disappear-small" style={{top: "30%", left: "14%"}} />
-      <Particle1 className="particle disappear-small" style={{top: "68%", left: "6%"}} />
-      <Particle1 className="particle disappear-small" style={{top: "27%", left: "81%"}} />
-      <Particle1 className="particle disappear-small" style={{top: "69%", left: "85%"}} />
 
-    </div>
-  );
-}
 
 export { ProjectPage };

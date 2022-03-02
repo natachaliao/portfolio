@@ -10,6 +10,7 @@ body {
   font-family: Poppins, 'Courier New', Courier, monospace;
   margin: 0;
   font-size: 14px;
+  overflow: hidden;
 }
 
 h1, h2, h3 {
@@ -26,7 +27,7 @@ h1, h2, h3 {
   transition: background .3s ease, color .3s linear;
   font: inherit;
   background: var(--white);
-  border: solid 2px var(--black);
+  border: solid 1.5px var(--black);
   padding: .5em 1em;
   text-decoration: none;
   color: var(--black);
@@ -41,25 +42,25 @@ h1, h2, h3 {
   overflow: hidden;
 }
 
-.bg {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  z-index: -1;
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr;
 }
 
-.bg * {
-  position: absolute;
-}
-
-.fixed {
-  position: fixed;
+.shape1 {
+  height: 50vh;
 }
 
 .particle {
   width: 1.3em;
 }
 
+/* #homepage-wp {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+} */
 
 /* width */
 ::-webkit-scrollbar {
