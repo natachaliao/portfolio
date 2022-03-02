@@ -10,7 +10,8 @@ import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 const ProjectPage = (props) => {
-  const { name, file, tools, description, pictures, date, link } = props.project;
+  const { setSelectedHeaderCateg, project } = props
+  const { name, file, tools, description, pictures, date, link } = project;
   const path = require("../assets/" + file).default;
 
   // const [showGallery, setShowGallery] = useState(false);
@@ -60,7 +61,7 @@ const ProjectPage = (props) => {
 
       {/* {showGallery && <Gallery pictures={pictures} />} */}
 
-      <Link to="/"><Arrow className="projectpage-back" /></Link>
+      <Link to="/"><Arrow className="projectpage-back" onClick={() => setSelectedHeaderCateg("portfolio")}/></Link>
 
     </div>
   )

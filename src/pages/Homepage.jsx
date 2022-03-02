@@ -66,14 +66,19 @@ const ScrollIndication = () => {
 
   const setScrollIndication = () => {
     const scrollArea = document.querySelector("#projects");
-    if(!scrollArea) return;
+    console.log(scrollArea);
+    
+    if(!scrollArea) {
+      console.log('no scrollarea');
+      return
+    };
+    console.log("scroll ", scrollArea.scrollWidth);
+    console.log('client ', scrollArea.clientWidth);
     if(scrollArea.scrollWidth > scrollArea.clientWidth) {
       setOpacity(1);
-      scrollArea.setAttribute('style', 'justify-content: flex-start');
     }
     else {
       setOpacity(0);
-      scrollArea.setAttribute('style', 'justify-content: center');
     }
   }
 

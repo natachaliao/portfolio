@@ -20,7 +20,7 @@ function App() {
           <Route path={`/${project.route}`} key={`project-${project.order}`}>
             <div className='page'>
               <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg}/>
-              <ProjectPage project={project} />
+              <ProjectPage project={project} setSelectedHeaderCateg={setSelectedHeaderCateg} />
               <Background n={2} />
             </div>
           </Route>
