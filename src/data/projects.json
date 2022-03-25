@@ -1,5 +1,47 @@
 [    
     {
+        "name": "Underwater Ecosystem",
+        "order": 13,
+        "date": 2022,
+        "categories": [1, 2],
+        "file": "UnderwaterEcosystem/ecosystem-view.jpg",
+        "route": "underwaterecosystem",
+        "contributors": [],
+        "link": "https://underwater-ecosystem.netlify.app",
+        "tools": ["Figma", "HTML/CSS/JS", "Three.js"],
+        "description": "Underwater ecosystem est un environnement sous-marin où des techniques d'IA font interagir des poissons et des coraux. D'année en année, l'écosystème évolue au fur et à mesure que les poissons se reproduisent et mangent des coraux. Réalisé en équipe de 3. Je me suis occupée de coder une partie du site, de designer l'interface graphique sur Figma et de l'implémenter.",
+        "pictures": [
+            {
+                "file": "UnderwaterEcosystem/ecosystem-view.jpg",
+                "media": "picture"
+            }, {
+                "file": "UnderwaterEcosystem/species-view.jpg",
+                "media": "picture"
+            }
+        ]
+    },
+    {
+        "name": "Phishy",
+        "order": 12,
+        "date": 2022,
+        "categories": [4],
+        "file": "Phishy/cover.jpg",
+        "route": "phishy",
+        "contributors": [],
+        "link": "https://youtu.be/ZCbeLetkaXg",
+        "tools": ["Illustrator", "After Effects"],
+        "description": "Il s'agit d'un projet académique qui consistait à convevoir un produit pour lutter contre les arnaques numériques. En équipe de 4, nous avons développé le concept de Phishy. Il s'agit de proposer aux utilisateurs des mini-jeux pour les former à repérer des arnaques numériques. Pour expliquer le concept, nous avons réalisé une vidéo en motion design. Je me suis occupée de l'animation de la première partie jusqu'à 0:45 et de la création des assets graphiques qui y apparaissent.",
+        "pictures": [
+            {
+                "file": "https://youtu.be/ZCbeLetkaXg",
+                "media": "video"
+            }, {
+                "file": "Phishy/ressources.jpg",
+                "media": "picture"
+            }
+        ]
+    },
+    {
         "name": "Formaxe",
         "order": 11,
         "date": 2021,
