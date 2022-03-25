@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3cc5d254.chunk.css",
-    "main.js": "/portfolio/static/js/main.f08ddc62.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f08ddc62.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.179ece37.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.179ece37.js.map",
-    "static/js/2.388e4796.chunk.js": "/portfolio/static/js/2.388e4796.chunk.js",
-    "static/js/2.388e4796.chunk.js.map": "/portfolio/static/js/2.388e4796.chunk.js.map",
-    "static/js/3.a51133ef.chunk.js": "/portfolio/static/js/3.a51133ef.chunk.js",
-    "static/js/3.a51133ef.chunk.js.map": "/portfolio/static/js/3.a51133ef.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.7ae18231.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.7ae18231.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.b9f28ef3.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.b9f28ef3.js.map",
+    "static/js/2.6846f29a.chunk.js": "/portfolio/static/js/2.6846f29a.chunk.js",
+    "static/js/2.6846f29a.chunk.js.map": "/portfolio/static/js/2.6846f29a.chunk.js.map",
+    "static/js/3.db5cf8fc.chunk.js": "/portfolio/static/js/3.db5cf8fc.chunk.js",
+    "static/js/3.db5cf8fc.chunk.js.map": "/portfolio/static/js/3.db5cf8fc.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.3cc5d254.chunk.css.map": "/portfolio/static/css/main.3cc5d254.chunk.css.map",
-    "static/js/2.388e4796.chunk.js.LICENSE.txt": "/portfolio/static/js/2.388e4796.chunk.js.LICENSE.txt",
+    "static/js/2.6846f29a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6846f29a.chunk.js.LICENSE.txt",
     "static/media/At the beach.PNG": "/portfolio/static/media/At the beach.14ce37f6.PNG",
     "static/media/Bolandes - Light.ttf": "/portfolio/static/media/Bolandes - Light.1c9196fc.ttf",
     "static/media/Donatella (RECTO).PNG": "/portfolio/static/media/Donatella (RECTO).3dc09371.PNG",
@@ -66,6 +66,7 @@
     "static/media/menu.gif": "/portfolio/static/media/menu.0ab4d234.gif",
     "static/media/menu.jpg": "/portfolio/static/media/menu.ce05b06b.jpg",
     "static/media/miel.png": "/portfolio/static/media/miel.081333a9.png",
+    "static/media/mobile-view.jpg": "/portfolio/static/media/mobile-view.323e2c1a.jpg",
     "static/media/oracle.png": "/portfolio/static/media/oracle.ea1b60ab.png",
     "static/media/order.jpg": "/portfolio/static/media/order.34d5b199.jpg",
     "static/media/order.gif": "/portfolio/static/media/order.6ee88f01.gif",
@@ -92,9 +93,9 @@
     "static/media/visual RS.png": "/portfolio/static/media/visual RS.c13edb45.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.179ece37.js",
-    "static/js/2.388e4796.chunk.js",
+    "static/js/runtime-main.b9f28ef3.js",
+    "static/js/2.6846f29a.chunk.js",
     "static/css/main.3cc5d254.chunk.css",
-    "static/js/main.f08ddc62.chunk.js"
+    "static/js/main.7ae18231.chunk.js"
   ]
 }
