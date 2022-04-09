@@ -23,6 +23,10 @@ h1, h2, h3 {
   --accent: #F26161;
 }
 
+a {
+  color: var(--accent);
+}
+
 .button {
   transition: background .3s ease, color .3s linear;
   font: inherit;

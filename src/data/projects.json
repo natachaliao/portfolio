@@ -75,12 +75,12 @@
         "name": "Meishi",
         "date": 2021,
         "categories": [1],
-        "file": "Meishi/cover.PNG",
+        "file": "Meishi/cover.jpg",
         "route": "meishi",
         "contributors": [],
         "link": "",
         "tools": ["Figma"],
-        "description": "J'ai réalisé en tant que projet personnel la maquette d'un site de restauration chinoise appelé Meishi. J'ai créé 5 pages : accueil, menu, avis, commande, réservation.",
+        "description": "J'ai réalisé en tant que projet personnel la maquette d'un site de restauration chinoise appelé Meishi. J'ai créé 5 pages : accueil, menu, avis, commande, réservation.<br/><br/>Crédits : Photos par <a target='_blank' href='https://unsplash.com/@clorisyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Cloris Ying</a>, <a target='_blank' href='https://unsplash.com/@vanthanh2608?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Van Thanh</a> et <a target='_blank' href='https://unsplash.com/@picoftasty?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Mae Mu</a> sur <a target='_blank' href='https://unsplash.com/s/photos/chinese-restaurant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a>",
         "pictures": [
             {
                 "file": "Meishi/homepage.jpg",
