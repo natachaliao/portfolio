@@ -20,7 +20,7 @@
     text-align: justify;
 }
 
-.about-mail {
+.about-links {
     display: grid;
     grid-template-columns: min-content auto;
     align-items: center;
@@ -28,18 +28,18 @@
     margin: 1em 0;
 }
 
-.about-mail img {
+.about-links img {
     height: 1em;
     filter: brightness(0);
 }
 
-.about-mail a {
+.about-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color .3s ease;
 }
 
-.about-mail a:hover {
+.about-links a:hover {
     color: var(--accent);
 }
 
@@ -78,7 +78,7 @@
     height: 100%;
 }
 
-.about-mail {
+.about-links {
     display: grid;
     grid-template-columns: min-content auto;
     align-items: center;
@@ -86,18 +86,18 @@
     margin: 1em 0;
 }
 
-.about-mail img {
+.about-links img {
     height: 1em;
     filter: brightness(0);
 }
 
-.about-mail a {
+.about-links a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     transition: color .3s ease;
 }
 
-.about-mail a:hover {
+.about-links a:hover {
     color: var(--accent);
 }
 

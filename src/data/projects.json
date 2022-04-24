@@ -7,8 +7,8 @@
         "route": "portfolioadmin",
         "contributors": [],
         "link": "",
-        "tools": ["React", "Ant design", "Node.js", "Express.js", "MongoDB"],
-        "description": "J'ai créé une api et un panneau admin pour la gestion des projets de ce portfolio en ligne. Pour créer l'api, j'ai utilisé node.js, express.js et une base de données mongoDB où sont stockées les données de mes projets. J'ai ensuite créé, avec react et le framework css ant design, un panneau admin qui interroge cette api pour modifier la base de données, y ajouter un projet, modifier un projet existant et supprimer un projet.",
+        "tools": ["React", "Ant design", "Node.js", "Express.js", "MongoDB", "Typescript"],
+        "description": "J'ai créé une api et un panneau admin pour la gestion des projets de ce portfolio en ligne. Pour créer l'api, j'ai utilisé node.js, express.js et une base de données mongoDB où sont stockées les données de mes projets. J'ai ensuite créé, avec Typescript, React et la bibliothèque de composants React Ant design, un panneau admin qui interroge cette api pour modifier la base de données, y ajouter un projet, modifier un projet existant et supprimer un projet.",
         "pictures": [
             {
                 "file": "PortfolioAdmin/dashboard.png",

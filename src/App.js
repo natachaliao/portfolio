@@ -12,6 +12,7 @@ import Background from './components/Background';
 function App() {
   const [ selectedHeaderCateg, setSelectedHeaderCateg ] = useState("portfolio");
   const mail = "natacha-liao@live.fr";
+  const github = "https://github.com/Natachaliao32";
   return (
     <Router>
       <Switch>
@@ -29,7 +30,7 @@ function App() {
         <Route path="/apropos">
           <div className='page'>
             <Header name="Natacha Liao" selectedHeaderCateg={selectedHeaderCateg} setSelectedHeaderCateg={setSelectedHeaderCateg} />
-            <About mail={mail} />
+            <About mail={mail} github={github} />
             <Background n={3} />
           </div>
         </Route>

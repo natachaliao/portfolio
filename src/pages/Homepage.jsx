@@ -32,7 +32,7 @@ const Homepage = (props) => {
   });
   
   // Handle categories selection
-  const [ selectedCateg, setSelectedCateg ] = useState("Tout");
+  const [ selectedCateg, setSelectedCateg ] = useState("Développement web");
   const projectsOfSelectedCategories = (selectedCategory, projects) => {
     if(selectedCategory === "Tout") return projects;
     return projects.filter(project => {
