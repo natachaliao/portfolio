@@ -1,5 +1,31 @@
 [    
     {
+        "name": "Portfolio admin",
+        "date": 2022,
+        "categories": [2],
+        "file": "PortfolioAdmin/dashboard.png",
+        "route": "portfolioadmin",
+        "contributors": [],
+        "link": "",
+        "tools": ["React", "Ant design", "Node.js", "Express.js", "MongoDB"],
+        "description": "J'ai créé une api et un panneau admin pour la gestion des projets de ce portfolio en ligne. Pour créer l'api, j'ai utilisé node.js, express.js et une base de données mongoDB où sont stockées les données de mes projets. J'ai ensuite créé, avec react et le framework css ant design, un panneau admin qui interroge cette api pour modifier la base de données, y ajouter un projet, modifier un projet existant et supprimer un projet.",
+        "pictures": [
+            {
+                "file": "PortfolioAdmin/dashboard.png",
+                "media": "picture"
+            }, {
+                "file": "PortfolioAdmin/create-project.png",
+                "media": "picture"
+            }, {
+                "file": "PortfolioAdmin/project-info.png",
+                "media": "picture"
+            }, {
+                "file": "PortfolioAdmin/properties.png",
+                "media": "picture"
+            }
+        ]
+    },
+    {
         "name": "Underwater Ecosystem",
         "date": 2022,
         "categories": [1, 2],
